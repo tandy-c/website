@@ -1,30 +1,30 @@
 body {
     margin: 0;
-    font-family: "itc-stone-sans", 'montserrat', sans-serif;   
-    padding: 16px;
-    height: 1500px; /* Used in this example to enable scrolling */
-    background-image: url("boston.png"); 
+    font-family: "itc-stone-sans", 'montserrat', sans-serif;
+    height: auto;
+    background-image: url("boston.png");
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     color: #ffffff;
-    /* overflow-y: auto;
-    overflow-x: auto; */
 }
 
-/* 
-.main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px;
-    background-image: url("boston.png"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    color: #ffffff;
-    z-index: 100000000;
-  } */
 
-  
+.main {
+    padding: 0px;
+    margin-top: 0px;
+    color: #ffffff;
+    background: none;
+    z-index: 100000000;
+    background: rgba(0, 0, 0, 0.75);
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    padding: 14px 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 14pt;
+    height: 1500px;
+}

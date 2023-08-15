@@ -13,18 +13,22 @@ body {
 
 .main {
     padding: 0px;
-    margin-top: 0px;
     color: #ffffff;
     background: none;
     z-index: 100000000;
+    /* background: linear-gradient(-135deg, rgba(0, 0, 0, 0.75), 12px, rgba(255, 255, 255, 0.75)); */
     background: rgba(0, 0, 0, 0.75);
-    margin: auto;
-    width: 80%;
+    /* transform: perspective(2px) rotateX(1deg); */
+    /* margin: auto; */
+    width: 100%;
     overflow: hidden;
     padding: 14px 16px;
     border: 2px solid black;
     border-radius: 10px;
     justify-content: center;
     font-size: 14pt;
-    height: 1500px;
+    height: inherit;
+    border-top: rgba(0, 0, 0, 0.75);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }

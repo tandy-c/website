@@ -21,7 +21,7 @@
 }
 
 .navbar a:hover {
-  background: rgb(207, 43, 40, 0.95);
+  background: rgba(207, 43, 40, 0.95);
   color: black;
   z-index: 100;
 }

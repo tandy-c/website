@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: "itc-stone-sans", 'montserrat', sans-serif;
     height: auto;
-    background-image: url("/img/boston.png");
+    background-image: url("/img/boston_sharp.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -23,6 +23,13 @@ body {
     flex-direction: column; */
 }
 
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .1%;
+    margin-left: -15%;
+}
 
 .main {
     padding: 0px;
@@ -49,4 +56,33 @@ body {
     flex-direction: column;
     /* float: left; */
     margin-left: 10px;
+}
+
+ul {
+    text-align: left;
+    list-style-position: outside;
+    /* list-style-type: circle; */
+    font-size: 12pt;
+}
+
+li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(207, 43, 40);
+}
+
+a:visited {
+    color: rgb(150, 43, 200);
+}
+
+a:hover {
+    color: rgb(193, 3, 0);
+}
+
+a:active {
+    color: rgb(255, 0, 0);
 }

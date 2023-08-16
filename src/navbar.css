@@ -25,3 +25,12 @@
   color: black;
   z-index: 100;
 }
+
+.navbar a:visited {
+  color: #f2f2f2
+}
+
+
+.navbar a:active {
+  color: #000000
+}

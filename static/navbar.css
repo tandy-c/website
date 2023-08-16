@@ -1,6 +1,6 @@
 .navbar {
   overflow: hidden;
-  background-color: #141212;
+  background-color: rgb(0, 0, 0, .95);
   position: sticky;
   top: 0px;
   z-index: 100;
@@ -21,7 +21,7 @@
 }
 
 .navbar a:hover {
-  background: #ddd;
+  background: rgb(207, 43, 40, 0.95);
   color: black;
   z-index: 100;
 }

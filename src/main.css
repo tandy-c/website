@@ -2,11 +2,16 @@ body {
     margin: 0;
     font-family: "itc-stone-sans", 'montserrat', sans-serif;
     height: auto;
-    background-image: url("/img/boston_sharp.png");
+    background-image: url("../img/boston_sharp.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #f2f2f2;
+}
+
+h4 {
+    color:rgb(172, 172, 172);
+    margin-top: -25px;
 }
 
 .image {
@@ -26,9 +31,10 @@ body {
 .container {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: .1%;
-    margin-left: -15%;
+    grid-template-columns: 100px auto;
+    grid-template-rows: repeat(2, auto);
+    row-gap: -1922px;
+    /* column-gap: 20px; */
 }
 
 .main {
@@ -36,10 +42,10 @@ body {
     color: #f2f2f2;
     background: none;
     z-index: 100000000;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.75);
     overflow: hidden;
     padding: 14px 16px;
-    border: 2px solid black;
+    border: 3px solid black;
     justify-content: center;
     font-size: 14pt;
     -webkit-backdrop-filter: blur(5px);

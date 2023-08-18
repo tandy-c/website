@@ -31,7 +31,7 @@ h4 {
 .container {
     display: grid;
     align-items: center;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 100px auto 50px;
     grid-template-rows: repeat(2, auto);
     border: 2px solid rgba(242, 242, 242, 0.45);
     border-radius: 5px;
@@ -45,6 +45,16 @@ h4 {
     justify-content: center;
 }
 
+.span_carrot{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* float: left; */
+    margin-left: 10px;
+}
+
 .span_img {
     display: flex;
 }
@@ -52,6 +62,13 @@ h4 {
 .last_row {
     border-bottom: none;
 }
+
+.drawer {
+    /* display: none; */
+    grid-column: 1/4; 
+    padding-left:50px;
+}
+
 
 .main {
     padding: 0px;

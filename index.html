@@ -13,7 +13,20 @@
     <link rel="stylesheet" href="src/font.css">
     <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="src/scrollbar.css">
-
+    <script>
+        function openDrawer(drawer_id){
+            var drawer = document.getElementById("drawer-" + drawer_id);
+            var carrot = document.getElementById("carrot-" + drawer_id);
+            
+            if (drawer.style.display == ""){
+                drawer.style.display = "none";
+                carrot.style.transform = "rotate(0deg)";
+                return;
+            }
+            carrot.style.transform = "rotate(180deg)";
+            drawer.style.display = "";
+          }
+    </script>
 </head>
 
 <body>
@@ -36,38 +49,40 @@
         </h4>
         <hr>
         <p>
-
             I'm from Sharon, Massachusetts and I'm interested in data science and public transit.
-
         </p>
     </div>
-
-    <!-- <div class="main" id="about" style="margin: 2% 0%;">
-        <h1>Experience</h1>
-        <img src="img/kcs.jpg" height="50" width="50" class="image" style="float:left;">
-        <span style="float:left;margin: -25px 15px;">
-            <h2>Keolis</h2>
-            <h4 style="color:rgb(172, 172, 172);margin-top: -25px;">
-                DS-SD Technical Co-Op
-            </h4>
-        </span>
-
-    </div> -->
 
     <div class="main" id="projects" style="margin: 2% 0%;">
         <h1>Projects</h1>
         <hr>
         <br>
         <span class="container">
-            <span class="span_img">
+            <span class="span_img" onclick="openDrawer('1')">
                 <img src="img/MBTA.png" height="50" width="50" class="image">
             </span>
-            <span>
+            <span onclick="openDrawer('1')">
                 <h2>MBTA Mapper</h2>
                 <h4>
                     Passion project
                 </h4>
             </span>
+            <span class="span_img" onclick="openDrawer('1')">
+                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-1">
+            </span>
+            <!-- <span id="drawer-1" style="display: none;"></span> -->
+            <span id="drawer-1" class = "drawer" style="display: none;">
+                <br>
+                <a href="https://mbtamapper-beta.azurewebsites.net/" target="_blank" style="margin-left:50px">Site, </a>
+                <a href="https://github.com/tandy-c/mbta_mapper" target="_blank">Repository</a>
+                <ul>
+                    
+                    <li>It's a web application that maps realtime data from the MBTA.</li>
+                    <li>Whilist the map looks nice, the code doesn't.</li>
+                    <li>Please <a href="#contact">contact</a> me if it breaks (because it will)</li>
+                </ul>
+            </span>
+            <!-- <span id="drawer-1" style="display: none;"></span> -->
         </span>
     </div>
 
@@ -77,33 +92,62 @@
         <hr>
         <br>
         <span class="container">
-            <span class="span_img">
+            <span class="span_img" onclick="openDrawer('2')">
                 <img src="img/coe.png" height="50" width="50" class="image">
             </span>
-            <span>
+            <span onclick="openDrawer('2')">
                 <h2>Northeastern University, College of Engineering</h2>
                 <h4>
                     Tutor for IE3425
                 </h4>
             </span>
-            <span class="span_img">
+            <span class="span_img" onclick="openDrawer('2')">
+                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-2">
+            </span>
+            <span id="drawer-2" class = "drawer" style="display: none;">
+                <h2>MBTA Mapper</h2>
+                <h4>
+                    Passion project
+                </h4>
+            </span>
+
+
+            <span class="span_img" onclick="openDrawer('3')">
                 <img src="img/kcs.jpg" height="50" width="50" class="image">
             </span>
-            <span>
+            <span onclick="openDrawer('3')">
                 <h2>Keolis Commuter Services</h2>
                 <h4>
                     Digital Solutions - Service Delivery Technical Co-Op
                 </h4>
             </span>
-            <span class="span_img">
+            <span class="span_img" onclick="openDrawer('3')">
+                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-3">
+            </span>
+            <span id="drawer-3" class = "drawer" style="display: none;">
+                <h2>MBTA Mapper</h2>
+                <h4>
+                    Passion project
+                </h4>
+            </span>
+            <span class="span_img" onclick="openDrawer('4')">
                 <img src="img/amazon.jpg" height="50" width="50" class="image">
             </span>
-            <span>
+            <span onclick="openDrawer('4')">
                 <h2>
                     Amazon Fulfillment Center
                 </h2>
                 <h4>
                     FC Associate I
+                </h4>
+            </span>
+            <span class="span_img" onclick="openDrawer('4')">
+                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-4">
+            </span>
+            <span id="drawer-4" class = "drawer" style="display: none;">
+                <h2>MBTA Mapper</h2>
+                <h4>
+                    Passion project
                 </h4>
             </span>
         </span>
@@ -114,22 +158,40 @@
         <hr>
         <br>
         <span class="container">
-            <span class="span_img">
+            <span class="span_img" onclick="openDrawer('5')">
                 <img src="img/neu.png" height="50" width="50" class="image">
             </span>
-            <span>
+            <span onclick="openDrawer('5')">
                 <h2>Northeastern University</h2>
                 <h4>
                     Industrial Engineering
                 </h4>
             </span>
-            <span class="span_img">
+            <span class="span_img" onclick="openDrawer('5')">
+                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-5">
+            </span>
+            <span id="drawer-5" class = "drawer" style="display: none;">
+                <h2>MBTA Mapper</h2>
+                <h4>
+                    Passion project
+                </h4>
+            </span>
+            <span class="span_img" onclick="openDrawer('6')">
                 <img src="img/shs.png" height="50" width="50" class="image">
             </span>
-            <span>
+            <span onclick="openDrawer('6')">
                 <h2>Sharon High School</h2>
                 <h4>
                     High School Diploma
+                </h4>
+            </span>
+            <span class="span_img" onclick="openDrawer('6')">
+                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-6">
+            </span>
+            <span id="drawer-6" class = "drawer" style="display: none;">
+                <h2>MBTA Mapper</h2>
+                <h4>
+                    Passion project
                 </h4>
             </span>
         </span>

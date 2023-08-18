@@ -37,7 +37,7 @@ h4 {
     grid-template-rows: repeat(2, auto);
     border: 2px solid rgba(242, 242, 242, 0.45);
     border-radius: 5px;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     /* column-gap: 20px; */
 }
 

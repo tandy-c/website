@@ -67,6 +67,9 @@ h4 {
     /* display: none; */
     grid-column: 1/4; 
     padding-left:50px;
+    /* opacity: 0; */
+    /* transform: translateY(100%);
+    transition: 0.5s ease; */
 }
 
 

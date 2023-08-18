@@ -8,24 +8,26 @@
     <meta name="description" content="My personal website.">
     <meta name="keywords" content="Personal">
     <meta name="author" content="Johan Cho">
-    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" charset="UTF-8"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="src/navbar.css">
     <link rel="stylesheet" href="src/font.css">
     <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="src/scrollbar.css">
     <script>
-        function openDrawer(drawer_id){
+        function openDrawer(drawer_id) {
+            "Opens Drawer and edits carrot by Id"
             var drawer = document.getElementById("drawer-" + drawer_id);
             var carrot = document.getElementById("carrot-" + drawer_id);
-            
-            if (drawer.style.display == ""){
+
+            if (drawer.style.display == "") {
                 drawer.style.display = "none";
                 carrot.style.transform = "rotate(0deg)";
                 return;
             }
             carrot.style.transform = "rotate(180deg)";
             drawer.style.display = "";
-          }
+        }
     </script>
 </head>
 
@@ -49,7 +51,8 @@
         </h4>
         <hr>
         <p>
-            I'm from Sharon, Massachusetts and I'm interested in data science and public transit.
+            I'm from Sharon, Massachusetts and
+            I'm interested in data science.
         </p>
     </div>
 
@@ -71,7 +74,7 @@
                 <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-1">
             </span>
             <!-- <span id="drawer-1" style="display: none;"></span> -->
-            <span id="drawer-1" class = "drawer" style="display: none;">
+            <span id="drawer-1" class="drawer" style="display: none;">
                 <br>
                 <a href="https://mbtamapper-beta.azurewebsites.net/" target="_blank" style="margin-left:40px">Site, </a>
                 <a href="https://github.com/tandy-c/mbta_mapper" target="_blank">Repository</a>
@@ -103,7 +106,7 @@
             <span class="span_img" onclick="openDrawer('2')">
                 <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-2">
             </span>
-            <span id="drawer-2" class = "drawer" style="display: none;">
+            <span id="drawer-2" class="drawer" style="display: none;">
                 <ul>
                     <p>August 2023 - December 2023</p>
                     <li>Professor Zied is my God.</li>
@@ -123,7 +126,7 @@
             <span class="span_img" onclick="openDrawer('3')">
                 <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-3">
             </span>
-            <span id="drawer-3" class = "drawer" style="display: none;">
+            <span id="drawer-3" class="drawer" style="display: none;">
                 <ul>
                     <p>Janurary 2023 - August 2023</p>
                     <li>Yeah you know that sign at South Station, Ruggles, Back Bay
@@ -145,7 +148,7 @@
             <span class="span_img" onclick="openDrawer('4')">
                 <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-4">
             </span>
-            <span id="drawer-4" class = "drawer" style="display: none;">
+            <span id="drawer-4" class="drawer" style="display: none;">
                 <ul>
                     <p>September 2021 - December 2022</p>
                     <li>I wasn't a programmer I picked your groceries lol.</li>
@@ -171,7 +174,7 @@
             <span class="span_img" onclick="openDrawer('5')">
                 <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-5">
             </span>
-            <span id="drawer-5" class = "drawer" style="display: none;">
+            <span id="drawer-5" class="drawer" style="display: none;">
                 <ul>
                     <p>September 2022 - May 2025</p>
                     <li>Minor: Mathematics</li>
@@ -192,7 +195,7 @@
             <span class="span_img" onclick="openDrawer('6')">
                 <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-6">
             </span>
-            <span id="drawer-6" class = "drawer" style="display: none;">
+            <span id="drawer-6" class="drawer" style="display: none;">
                 <ul>
                     <p>August 2017 - June 2021</p>
                 </ul>

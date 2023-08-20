@@ -7,7 +7,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: #f2f2f2;
-    background-position: 100% 100%;
+    background-position: 50% 50%;
 
 }
 
@@ -30,50 +30,6 @@ h4 {
     flex-direction: column; */
 }
 
-.container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 100px minmax(75px, auto) 50px;
-    grid-template-rows: repeat(2, auto);
-    border: 2px solid rgba(242, 242, 242, 0.45);
-    border-radius: 5px;
-    /* word-wrap: break-word; */
-    /* column-gap: 20px; */
-}
-
-.container>span {
-    border-bottom: 2px solid rgba(242, 242, 242, 0.45);
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.span_carrot {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* float: left; */
-    margin-left: 10px;
-}
-
-.span_img {
-    display: flex;
-}
-
-.last_row {
-    border-bottom: none;
-}
-
-.drawer {
-    /* display: none; */
-    grid-column: 1/4;
-    padding-left: 50px;
-    /* opacity: 0; */
-    /* transform: translateY(100%);
-    transition: 0.5s ease; */
-}
 
 
 .main {

@@ -1,224 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Johan Cho</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="My personal website.">
-    <meta name="keywords" content="Personal">
-    <meta name="author" content="Johan Cho">
-    <meta name="viewport" charset="UTF-8"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="img/johan.favicon" rel="icon">
-    <link rel="stylesheet" href="src/navbar.css">
-    <link rel="stylesheet" href="src/font.css">
-    <link rel="stylesheet" href="src/main.css">
-    <link rel="stylesheet" href="src/scrollbar.css">
-    <link rel="stylesheet" href="src/drawer.css">
-    <script src = "src/index.js"></script>
-</head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="My personal website." />
+    <meta name="keywords" content="Personal" />
+    <meta name="author" content="Johan Cho" />
+    <meta
+      name="viewport"
+      charset="UTF-8"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link href="img/johan.favicon" rel="icon" />
+    <link rel="stylesheet" href="src/navbar.css" />
+    <link rel="stylesheet" href="src/font.css" />
+    <link rel="stylesheet" href="src/main.css" />
+    <link rel="stylesheet" href="src/scrollbar.css" />
+    <link rel="stylesheet" href="src/drawer.css" />
+    <script src="src/index.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="navbar">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#projects">Experience</a>
-        <a href="#" style="float: right;">Johan Cho</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#projects">Experience</a>
+      <a href="#" style="float: right">Johan Cho</a>
     </div>
     <!-- <div onload="titleOnLoad()"></div> -->
-    <div class="main" style="margin: 17% 0%;" >
-        <img src=" img/johan.png" height="200" width="200" class="image" id= "titleImage">
-        <h1 class="titlecard" id = "titleCard">Heyo! I'm Johan.</h1>
+    <div class="main" style="margin: 17% 0%">
+      <img
+        src=" img/johan.png"
+        height="200"
+        width="200"
+        class="image"
+        id="titleImage"
+      />
+      <h1 class="titlecard" id="titleCard">Heyo! I'm Johan.</h1>
     </div>
 
-    <div class="main" id="about" style="margin: 2% 0%;">
-        <h1>About Me</h1>
-        <h4 style="margin-bottom: 15px;">
-            A 3rd year "Industrial Engineer" at Northeastern University.
-        </h4>
-        <hr>
-        <p>
-            I'm from Sharon, Massachusetts and
-            I'm interested in data science and the backend.
-        </p>
+    <div class="main" id="about" style="margin: 2% 0%">
+      <h1>About Me</h1>
+      <h4 style="margin-bottom: 15px">
+        A 3rd year "Industrial Engineer" at Northeastern University.
+      </h4>
+      <hr />
+      <p>
+        I'm from Sharon, Massachusetts and I'm interested in data science and
+        the backend.
+      </p>
     </div>
 
-    <div class="main" id="projects" style="margin: 2% 0%;">
-        <h1>Projects</h1>
-        <hr>
-        <br>
-        <span class="container">
-            <span class="span_img" onclick="openDrawer('1')">
-                <img src="img/MBTA.png" height="50" width="50" class="image">
-            </span>
-            <span onclick="openDrawer('1')">
-                <h2>MBTA Mapper</h2>
-                <h4>
-                    Passion project
-                </h4>
-            </span>
-            <span class="span_img" onclick="openDrawer('1')">
-                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-1">
-            </span>
-            <!-- <span id="drawer-1" style="display: none;"></span> -->
-            <span id="drawer-1" class="drawer" style="display: none;border-bottom:none;">
-                <ul>
-                    <p>May 2023 - August 2023</p>
-                    <li>Uses Flask, SQLAlchemy, Pandas (Python) and Leaflet (Javascript) to map realtime MBTA data </li>
-                    <li>Please <a href="#contact">contact</a> me if it breaks (because it will)</li>
-                    <li>View it <a href="https://mbtamapper-beta.azurewebsites.net/" target="_blank">here.</a></li>
-                    <li>View the repository <a href="https://github.com/tandy-c/mbta_mapper" target="_blank">here.</a></li>
-                </ul>
-            </span>
-            <!-- <span id="drawer-1" style="display: none;"></span> -->
+    <div class="main" id="projects" style="margin: 2% 0%">
+      <h1>Projects</h1>
+      <hr />
+      <br />
+      <span class="container">
+        <span class="span_img" onclick="openDrawer('1')">
+          <img src="img/MBTA.png" height="50" width="50" class="image" />
         </span>
-    </div>
-
-
-    <div class="main" id="experience" style="margin: 2% 0%;">
-        <h1>Experience</h1>
-        <hr>
-        <br>
-        <span class="container">
-            <span class="span_img" onclick="openDrawer('2')">
-                <img src="img/coe.png" height="50" width="50" class="image">
-            </span>
-            <span onclick="openDrawer('2')">
-                <h2>Northeastern University, College of Engineering</h2>
-                <h4>
-                    Tutor for IE3425
-                </h4>
-            </span>
-            <span class="span_img" onclick="openDrawer('2')">
-                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-2">
-            </span>
-            <span id="drawer-2" class="drawer" style="display: none;" onclick="openDrawer('2')">
-                <ul>
-                    <p>August 2023 - December 2023</p>
-                    <!-- <li>Professor Zied is my God.</li> -->
-                </ul>
-            </span>
-
-
-            <span class="span_img" onclick="openDrawer('3')">
-                <img src="img/kcs.jpg" height="50" width="50" class="image">
-            </span>
-            <span onclick="openDrawer('3')">
-                <h2>Keolis Commuter Services</h2>
-                <h4>
-                    Digital Solutions - Service Delivery Technical Co-Op
-                </h4>
-            </span>
-            <span class="span_img" onclick="openDrawer('3')">
-                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-3">
-            </span>
-            <span id="drawer-3" class="drawer" style="display: none;" onclick="openDrawer('3')">
-                <ul>
-                    <p>Janurary 2023 - August 2023</p>
-                    <!-- <li>Yeah you know that sign at South Station, Ruggles, Back Bay
-                        or North Station that you rely on every day to get home? That was me.
-                    </li> -->
-                </ul>
-            </span>
-            <span class="span_img" onclick="openDrawer('4')" >
-                <img src="img/amazon.jpg" height="50" width="50" class="image">
-            </span>
-            <span onclick="openDrawer('4')">
-                <h2>
-                    Amazon Fulfillment Center
-                </h2>
-                <h4>
-                    FC Associate I
-                </h4>
-            </span>
-            <span class="span_img" onclick="openDrawer('4')" >
-                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-4" >
-            </span>
-            <span id="drawer-4" class="drawer" style="display: none;border-bottom:none;" onclick="openDrawer('4')">
-                <ul>
-                    <p>September 2021 - December 2022</p>
-                    <!-- <li>I wasn't a programmer I picked your groceries lol.</li> -->
-                </ul>
-            </span>
+        <span onclick="openDrawer('1')">
+          <h2>MBTA Mapper</h2>
+          <h4>Passion project</h4>
         </span>
-    </div>
-
-    <div class="main" id="education" style="margin: 2% 0%;">
-        <h1>Education</h1>
-        <hr>
-        <br>
-        <span class="container">
-            <span class="span_img" onclick="openDrawer('5')">
-                <img src="img/neu.png" height="50" width="50" class="image">
-            </span>
-            <span onclick="openDrawer('5')">
-                <h2>Northeastern University</h2>
-                <h4>
-                    Industrial Engineering
-                </h4>
-            </span>
-            <span class="span_img" onclick="openDrawer('5')">
-                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-5">
-            </span>
-            <span id="drawer-5" class="drawer" style="display: none;" onclick="openDrawer('5')">
-                <ul>
-                    <p>September 2022 - May 2025</p>
-                    <li>Minor: Mathematics</li>
-                    <li>GPA: 4.0</li>
-                    <li>Dean's List: 2021-2022</li>
-                    <li>Activities: Tau Beta Pi, IISE</li>
-                </ul>
-            </span>
-            <span class="span_img" onclick="openDrawer('6')">
-                <img src="img/shs.png" height="50" width="50" class="image">
-            </span>
-            <span onclick="openDrawer('6')">
-                <h2>Sharon High School</h2>
-                <h4>
-                    High School Diploma
-                </h4>
-            </span>
-            <span class="span_img" onclick="openDrawer('6')">
-                <img src="img/carrot.png" height="25" width="25" class="image" id="carrot-6">
-            </span>
-            <span id="drawer-6" class="drawer" style="display: none;border-bottom:none;" onclick="openDrawer('6')">
-                <ul>
-                    <p>August 2017 - June 2021</p>
-                </ul>
-            </span>
+        <span class="span_img" onclick="openDrawer('1')">
+          <img
+            src="img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            id="carrot-1"
+          />
         </span>
+        <!-- <span id="drawer-1" style="display: none;"></span> -->
+        <span
+          id="drawer-1"
+          class="drawer"
+          style="display: none; border-bottom: none"
+        >
+          <ul>
+            <h3>May 2023 - August 2023</h3>
+            <li>
+              Uses Flask, SQLAlchemy, Pandas (Python) and Leaflet (JavaScript)
+              to map realtime MBTA data
+            </li>
+            <li>
+              Please <a href="#contact">contact</a> me if it breaks (because it
+              will)
+            </li>
+            <li>
+              View it
+              <a
+                href="https://mbtamapper-beta.azurewebsites.net/"
+                target="_blank"
+                >here.</a
+              >
+            </li>
+            <li>
+              View the repository
+              <a href="https://github.com/tandy-c/mbta_mapper" target="_blank"
+                >here.</a
+              >
+            </li>
+            <img src="img/mapper2.gif" style="width: 90%" />
+          </ul>
+        </span>
+        <!-- <span id="drawer-1" style="display: none;"></span> -->
+      </span>
     </div>
 
+    <div class="main" id="experience" style="margin: 2% 0%">
+      <h1>Experience</h1>
+      <hr />
+      <br />
+      <span class="container">
+        <span class="span_img" onclick="openDrawer('2')">
+          <img src="img/coe.png" height="50" width="50" class="image" />
+        </span>
+        <span onclick="openDrawer('2')">
+          <h2>Northeastern University, College of Engineering</h2>
+          <h4>Tutor for IE3425</h4>
+        </span>
+        <span class="span_img" onclick="openDrawer('2')">
+          <img
+            src="img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            id="carrot-2"
+          />
+        </span>
+        <span id="drawer-2" class="drawer" style="display: none">
+          <ul>
+            <h3>August 2023 - December 2023</h3>
+            <!-- <li>Professor Zied is my God.</li> -->
+          </ul>
+        </span>
 
+        <span class="span_img" onclick="openDrawer('3')">
+          <img src="img/kcs.jpg" height="50" width="50" class="image" />
+        </span>
+        <span onclick="openDrawer('3')">
+          <h2>Keolis Commuter Services</h2>
+          <h4>Digital Solutions - Service Delivery Technical Co-Op</h4>
+        </span>
+        <span class="span_img" onclick="openDrawer('3')">
+          <img
+            src="img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            id="carrot-3"
+          />
+        </span>
+        <span id="drawer-3" class="drawer" style="display: none">
+          <ul>
+            <h3>Janurary 2023 - August 2023</h3>
+            <li>
+              Write Microsoft SQL queries to extract data from database systems
+            </li>
+            <li>
+              Write Azure functions in python to integrate and analyze data from
+              8+ sources and export to APIs
+            </li>
+            <li>
+              Conduct quarterly user audits and end user training whenever
+              necessary
+            </li>
+            <li>Test transit systems for upgrades and enhancements</li>
+            <li>
+              Batch process data sets, including schedules, sensor data and
+              application logs
+            </li>
+            <li>Load data sets to applications and ensure quality</li>
+            <li>Present data findings and test results to end-users</li>
+            <li>
+              Led other information technology duties, such as data collection
+              and validation on trains and systems
+            </li>
+            <hr style="margin: 25px 10% 25px, 0px" />
+            <h3>GTFS Importer (June 2023 - July 2023)</h3>
+            <li>
+              Rewrote an internal function that processes the MBTA's GTFS feed
+              using SQLAlchemy.
+            </li>
+            <li>Resulted in a cleaner, more stable function.</li>
+            <li>
+              Populates TransitVision backend, powering schedules, signage and
+              announcements at stations.
+            </li>
+            <li>
+              Populates backend Azure tables and Keolis Vehicle Locator map
+              layers.
+            </li>
+            <!-- style="margin-right: 10%; margin-top: 25px"  -->
+          </ul>
+        </span>
+        <span class="span_img" onclick="openDrawer('4')">
+          <img src="img/amazon.jpg" height="50" width="50" class="image" />
+        </span>
+        <span onclick="openDrawer('4')">
+          <h2>Amazon Fulfillment Center</h2>
+          <h4>FC Associate I</h4>
+        </span>
+        <span class="span_img" onclick="openDrawer('4')">
+          <img
+            src="img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            id="carrot-4"
+          />
+        </span>
+        <span
+          id="drawer-4"
+          class="drawer"
+          style="display: none; border-bottom: none"
+          onclick="openDrawer('4')"
+        >
+          <ul>
+            <h3>September 2021 - December 2022</h3>
+            <!-- <li>I wasn't a programmer I picked your groceries lol.</li> -->
+          </ul>
+        </span>
+      </span>
+    </div>
 
-    <div class="main" id="about" style="margin: 2% 0%;">
-        <h1> More About Me</h1>
+    <div class="main" id="education" style="margin: 2% 0%">
+      <h1>Education</h1>
+      <hr />
+      <br />
+      <span class="container">
+        <span class="span_img" onclick="openDrawer('5')">
+          <img src="img/neu.png" height="50" width="50" class="image" />
+        </span>
+        <span onclick="openDrawer('5')">
+          <h2>Northeastern University</h2>
+          <h4>Industrial Engineering</h4>
+        </span>
+        <span class="span_img" onclick="openDrawer('5')">
+          <img
+            src="img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            id="carrot-5"
+          />
+        </span>
+        <span
+          id="drawer-5"
+          class="drawer"
+          style="display: none"
+          onclick="openDrawer('5')"
+        >
+          <ul>
+            <h3>September 2022 - May 2025</h3>
+            <li>Minor: Mathematics</li>
+            <li>GPA: 4.0</li>
+            <li>Dean's List: 2021-2022</li>
+            <li>Activities: Tau Beta Pi, IISE</li>
+          </ul>
+        </span>
+        <span class="span_img" onclick="openDrawer('6')">
+          <img src="img/shs.png" height="50" width="50" class="image" />
+        </span>
+        <span onclick="openDrawer('6')">
+          <h2>Sharon High School</h2>
+          <h4>High School Diploma</h4>
+        </span>
+        <span class="span_img" onclick="openDrawer('6')">
+          <img
+            src="img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            id="carrot-6"
+          />
+        </span>
+        <span
+          id="drawer-6"
+          class="drawer"
+          style="display: none; border-bottom: none"
+        >
+          <ul>
+            <h3>August 2017 - June 2021</h3>
+            <li>Activities: Varsity Sailing, Economics Club</li>
+          </ul>
+        </span>
+      </span>
+    </div>
 
-        <hr>
-        <p>
+    <div class="main" id="about" style="margin: 2% 0%">
+      <h1>More About Me</h1>
 
-            <!-- I loathe writing about myself. I think that it's innate human nature,
+      <hr />
+      <p>
+        <!-- I loathe writing about myself. I think that it's innate human nature,
             or that I'm introverted to the point where I can't fathom the idea of doing so.
             <br><br>
             This segment probably took as much time as this website itself, and I'm clearly not a front
             end kinda guy. I'd rather stay quiet during a meeting or an interview, 
             lest there's something I want to talk about.
             <br><br> -->
-
-
-
-        </p>
+      </p>
     </div>
 
-
-
-
-    <div class="main" id="footer">
-
-    </div>
+    <div class="main" id="footer"></div>
 
     <!-- <script src="" async defer></script> -->
-</body>
-
+  </body>
 </html>

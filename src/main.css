@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #f2f2f2;
+    color: #ffffff;
     background-position: 50% 50%;
 
 }
@@ -34,17 +34,16 @@ h4 {
 
 .main {
     padding: 0px;
-    color: #f2f2f2;
     background: none;
     z-index: 100000000;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     padding: 14px 16px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     justify-content: center;
     font-size: 14pt;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     /* height: inherit; */
     /* border-top: rgba(0, 0, 0, 0.15); */
 }

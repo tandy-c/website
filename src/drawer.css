@@ -1,46 +1,64 @@
 .container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 100px minmax(75px, auto) 50px;
-    grid-template-rows: repeat(2, auto);
-    border: 2px solid rgba(242, 242, 242, 0.45);
-    border-radius: 5px;
-    /* word-wrap: break-word; */
-    /* column-gap: 20px; */
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100px minmax(75px, auto) 50px;
+  grid-template-rows: repeat(2, auto);
+  border: 2px solid rgba(242, 242, 242, 0.45);
+  border-radius: 5px;
+  /* word-wrap: break-word; */
+  /* column-gap: 20px; */
 }
 
-.container>span {
-    border-bottom: 2px solid rgba(242, 242, 242, 0.45);
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+.container > span {
+  border-bottom: 2px solid rgba(242, 242, 242, 0.45);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .span_carrot {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* float: left; */
-    margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* float: left; */
+  margin-left: 10px;
 }
 
 .span_img {
-    display: flex;
+  display: flex;
 }
 
 .last_row {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .drawer {
-    /* display: none; */
-    grid-column: 1/4;
-    padding-left: 50px;
-    animation: 0s ease 0s 1 normal none running none;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    /* transition: 0.5s ease; */
+  /* display: none; */
+  grid-column: 1/4;
+  padding-left: 50px;
+  animation: 0s ease 0s 1 normal none running none;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  /* transition: 0.5s ease; */
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  column-gap: 20px;
+  align-items: left;
+  /* grid-template-rows: repeat(2, auto); */
+  /* column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(242, 242, 242, 0.45); */
+  /* word-wrap: break-word; */
+  /* column-gap: 20px; */
+}
+
+.contact-grid .image {
+  margin: 0px 0px;
+}

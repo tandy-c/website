@@ -11,20 +11,16 @@ function openDrawer(drawer_id, interval = 250) {
     drawer.animate({ opacity: [1, 0] }, interval).onfinish = function () {
       drawer.style.display = "none";
     };
-    // drawer.style.display = "none";
     carrot.animate({ transform: "rotate(0deg)" }, interval / 2).onfinish =
       function () {
         carrot.style.transform = "rotate(0deg)";
       };
-    // carrot.style.transform = "rotate(0deg)";
     return;
   }
-  // carrot.style.transform = "rotate(180deg)";
   carrot.animate({ transform: "rotate(180deg)" }, interval / 2).onfinish =
     function () {
       carrot.style.transform = "rotate(180deg)";
     };
-  // carrot.style.transform = "rotate(180deg)";
   drawer.animate({ opacity: [0, 1] }, interval);
   drawer.style.display = "";
 }

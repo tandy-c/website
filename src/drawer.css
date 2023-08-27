@@ -5,8 +5,6 @@
   grid-template-rows: repeat(2, auto);
   border: 2px solid rgba(242, 242, 242, 0.45);
   border-radius: 5px;
-  /* word-wrap: break-word; */
-  /* column-gap: 20px; */
 }
 
 .container > span {
@@ -35,13 +33,8 @@
 }
 
 .drawer {
-  /* display: none; */
   grid-column: 1/4;
   padding-left: 50px;
-  animation: 0s ease 0s 1 normal none running none;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-  /* transition: 0.5s ease; */
 }
 
 .contact-grid {
@@ -49,14 +42,6 @@
   grid-template-columns: 50px 50px 50px;
   column-gap: 20px;
   align-items: left;
-  /* grid-template-rows: repeat(2, auto); */
-  /* column-gap: 20px;
-    row-gap: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    border: 2px solid rgba(242, 242, 242, 0.45); */
-  /* word-wrap: break-word; */
-  /* column-gap: 20px; */
 }
 
 .contact-grid .image {

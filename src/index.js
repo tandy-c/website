@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  titleOnLoad();
+  // titleOnLoad();
 });
 
 function openDrawer(drawer_id, interval = 250) {
@@ -52,4 +52,20 @@ function titleOnLoad(interval = 500) {
   for (_element of [image, title]) {
     _element.style.display = "";
   }
+}
+
+function hoverImage(image_id, interval = 250) {
+  var image = document.getElementById(image_id);
+  // image.style.visibility = "hidden";
+  image.animate({ transform: "scale(1.1)" }, interval).onfinish = function () {
+    image.style.transform = "scale(1.1)";
+  };
+}
+
+function unhoverImage(image_id, interval = 250) {
+  var image = document.getElementById(image_id);
+  // image.style.visibility = "hidden";
+  image.animate({ transform: "scale(1)" }, interval).onfinish = function () {
+    image.style.transform = "scale(1)";
+  };
 }

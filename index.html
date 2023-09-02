@@ -78,15 +78,8 @@
         <span id="drawer-1" class="drawer" style="display: none">
           <ul>
             <h3>May 2023 - Present</h3>
-            <li>
-              Uses Flask, SQLAlchemy, Pandas (Python) and Leaflet (JavaScript)
-              to map realtime MBTA data
-            </li>
-            <li>
-              <a href="#contact">Contact</a> me if it breaks (because it will)
-            </li>
-            <li>
-              View it
+            <!-- <h3>
+              View its deployment
               <a href="https://mbtamapper.com/" target="_blank">here</a> or at
               its
               <a
@@ -94,11 +87,65 @@
                 target="_blank"
                 >permanent url.</a
               >
+            </h3> -->
+
+            <a
+              href="https://github.com/tandy-c/mbta_mapper"
+              target="_blank"
+              style="width: 10%; display: inline-block; margin-bottom: 10px"
+              ><img
+                id="github-1"
+                src="img/github.png"
+                class="image"
+                width="50"
+                onmouseover="hoverImage('github-1')"
+                onmouseleave="unhoverImage('github-1')"
+                title="View the repository here"
+              />
+            </a>
+            <li>
+              Backend:
+              <ul style="margin-top: 12px">
+                Python:
+                <li style="margin-top: inherit">
+                  Pandas/Requests grabs data and dumps it into a SQLite database
+                  created by SQLAlchemy.
+                </li>
+                <li style="margin-top: inherit">
+                  Uses SQLAlchemy to interract with the database, generating map
+                  layers from ORMs and querying data.
+                </li>
+                <li style="margin-top: inherit">
+                  Flasks runs the application and export realtime data.
+                </li>
+              </ul>
             </li>
             <li>
-              View the repository
-              <a href="https://github.com/tandy-c/mbta_mapper" target="_blank"
-                >here.</a
+              Frontend:
+              <ul style="margin-top: 12px">
+                JavaScript:
+                <li style="margin-top: inherit">
+                  Leaflet and extension libraries render the map.
+                </li>
+                CSS:
+                <li style="margin-top: inherit">
+                  Custom CSS styles leaflet divs and other elements.
+                </li>
+                HTML:
+                <li style="margin-top: inherit">
+                  Generated in Python, JavaScript or written by hand.
+                </li>
+              </ul>
+            </li>
+            <li>
+              This preview shows the commuter rail map. You could view other
+              transit modes
+              <a href="https://mbtamapper.com/" target="_blank">here</a> or at
+              its
+              <a
+                href="https://mbtamapper-beta.azurewebsites.net/"
+                target="_blank"
+                >permanent url.</a
               >
             </li>
             <!-- <img src="img/mapper2.gif" style="width: 90%" /> -->
@@ -162,7 +209,6 @@
         <a
           href="https://www.linkedin.com/in/johan-cho-38892b1b1/"
           target="_blank"
-          class="img_link"
           ><img
             id="linkedin"
             src="img/linkedin.png"
@@ -172,7 +218,7 @@
             onmouseleave="unhoverImage('linkedin')"
           /><img />
         </a>
-        <a href="https://github.com/tandy-c" target="_blank" class="img_link"
+        <a href="https://github.com/tandy-c" target="_blank"
           ><img
             id="github"
             src="img/github.png"

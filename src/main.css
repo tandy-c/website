@@ -84,3 +84,10 @@ a:hover {
 a:active {
   color: rgb(255, 0, 0);
 }
+
+iframe {
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  aspect-ratio: 16/9;
+}

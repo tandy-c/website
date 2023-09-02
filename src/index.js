@@ -2,10 +2,15 @@ window.addEventListener("load", function () {
   // titleOnLoad();
 });
 
-function openDrawer(drawer_id, interval = 250) {
+function openDrawer(
+  drawer_id,
+  interval = 250,
+  iframeSources = ["https://mbtamapper.com/commuter_rail"]
+) {
   "Opens Drawer and edits carrot by Id";
   var drawer = document.getElementById("drawer-" + drawer_id);
   var carrot = document.getElementById("carrot-" + drawer_id);
+  var iFrames = drawer.getElementsByTagName("iframe");
 
   if (drawer.style.display == "") {
     drawer.animate({ opacity: [1, 0] }, interval).onfinish = function () {
@@ -15,6 +20,12 @@ function openDrawer(drawer_id, interval = 250) {
       function () {
         carrot.style.transform = "rotate(0deg)";
       };
+
+    for (ifr of iFrames) {
+      ifr.animate({ opacity: [1, 0] }, interval).onfinish = function () {
+        ifr.src = "";
+      };
+    }
     return;
   }
   carrot.animate({ transform: "rotate(180deg)" }, interval / 2).onfinish =
@@ -23,6 +34,10 @@ function openDrawer(drawer_id, interval = 250) {
     };
   drawer.animate({ opacity: [0, 1] }, interval);
   drawer.style.display = "";
+
+  for (i = 0; i < iFrames.length; i++) {
+    iFrames[i].src = iframeSources[i];
+  }
 }
 
 function titleOnLoad(interval = 500) {
@@ -69,3 +84,20 @@ function unhoverImage(image_id, interval = 250) {
     image.style.transform = "scale(1)";
   };
 }
+// function loadHiddenIframes(span_id) {
+//   var span = document.getElementById(span_id);
+//   var iframes = span.getElementsByTagName("iframe");
+//   for (f of iframes) {
+//     f.src = iframe.dataset.src;
+//   }
+// }
+
+// $(".hidden_element").show(function () {
+//   // Find the iframes within our newly-visible element
+//   $(this)
+//     .find("iframe")
+//     .prop("src", function () {
+//       // Set their src attribute to the value of data-src
+//       return $(this).data("src");
+//     });
+// });

@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
 function openDrawer(
   drawer_id,
   interval = 250,
-  iframeSources = ["https://mbtamapper.com/commuter_rail"]
+  iframeSources = ["https://mbtamapper.com/commuter_rail/"]
 ) {
   "Opens Drawer and edits carrot by Id";
   var drawer = document.getElementById("drawer-" + drawer_id);

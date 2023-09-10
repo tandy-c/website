@@ -12,13 +12,13 @@
       charset="UTF-8"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <link href="img/johan.favicon" rel="icon" />
-    <link rel="stylesheet" href="src/navbar.css" />
-    <link rel="stylesheet" href="src/font.css" />
-    <link rel="stylesheet" href="src/main.css" />
-    <link rel="stylesheet" href="src/scrollbar.css" />
-    <link rel="stylesheet" href="src/drawer.css" />
-    <script src="src/index.js"></script>
+    <link href="src/css/img/johan.favicon" rel="icon" />
+    <link rel="stylesheet" href="src/css/navbar.css" />
+    <link rel="stylesheet" href="src/css/font.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/scrollbar.css" />
+    <link rel="stylesheet" href="src/css/drawer.css" />
+    <script src="src/js/index.js"></script>
   </head>
 
   <body>
@@ -32,7 +32,7 @@
     <!-- <div onload="titleOnLoad()"></div> -->
     <div class="main" style="margin: 17% 0%">
       <img
-        src=" img/johan.png"
+        src=" src/img/johan.png"
         height="200"
         width="200"
         class="image"
@@ -41,7 +41,7 @@
       <h1 class="titlecard" id="titleCard">Heyo! I'm Johan.</h1>
     </div>
 
-    <div class="main" id="about" style="margin: 2% 0%">
+    <div class="main">
       <h1>About Me</h1>
       <h4 style="margin-bottom: 15px">
         A 3rd year "Industrial Engineer" at Northeastern University.
@@ -53,21 +53,21 @@
       </p>
     </div>
 
-    <div class="main" id="projects" style="margin: 2% 0%">
+    <div class="main" id="projects">
       <h1>Projects</h1>
       <hr />
       <br />
       <span class="container">
         <span class="span_img" onclick="openDrawer('1')">
-          <img src="img/MBTA.png" height="50" width="50" class="image" />
+          <img src="src/img/MBTA.png" height="50" width="50" class="image" />
         </span>
-        <span onclick="openDrawer('1')">
+        <span onclick="openDrawer('1')" style="cursor: pointer">
           <h2>MBTA Mapper</h2>
           <h4>Passion project</h4>
         </span>
         <span class="span_img" onclick="openDrawer('1')">
           <img
-            src="img/carrot.png"
+            src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
@@ -76,112 +76,179 @@
         </span>
         <!-- <span id="drawer-1" style="display: none;"></span> -->
         <span id="drawer-1" class="drawer" style="display: none">
-          <ul>
-            <h3>May 2023 - Present</h3>
-            <!-- <h3>
-              View its deployment
-              <a href="https://mbtamapper.com/" target="_blank">here</a> or at
-              its
+          <h3>View MBTA vehicles in real time!</h3>
+          <span style="margin-left: 12px">
+            <span class="contact-grid" style="margin: -20px 0px 20px 12px">
               <a
-                href="https://mbtamapper-beta.azurewebsites.net/"
+                href="https://github.com/tandy-c/mbta_mapper"
                 target="_blank"
-                >permanent url.</a
-              >
-            </h3> -->
+                style="width: 10%; display: inline-block; margin-bottom: 10px"
+                ><img
+                  id="github-1"
+                  src="src/img/github.png"
+                  class="image"
+                  width="50"
+                  onmouseover="hoverImage('github-1')"
+                  onmouseleave="unhoverImage('github-1')"
+                  title="View the repository here"
+                />
+              </a>
+              <a
+                href="https://mbtamapper.com/"
+                target="_blank"
+                style="width: 10%; display: inline-block; margin-bottom: 10px"
+                ><img
+                  id="globe-1"
+                  src="src/img/globe.png"
+                  class="image"
+                  width="50"
+                  onmouseover="hoverImage('globe-1')"
+                  onmouseleave="unhoverImage('globe-1')"
+                  title="Go to the site!"
+                /> </a
+            ></span>
+            <ul>
+              <li>
+                Uses requests, pandas and SQLAlchemy (python) to generate and
+                insert both static and real-time data into a SQLite database
+              </li>
+              <li>
+                Renders with leaflet, a JavaScript library for interactive maps
+                and has some html and css to style it
+              </li>
+              <li>
+                I made it after I realized I was dependent on Keolis's internal
+                realtime map for my commute and wanted to make something that I
+                could use, also
+                <a
+                  target="_blank"
+                  href="https://mbta.sites.fas.harvard.edu/T/commuter-rail-map.html"
+                  >this site sucks</a
+                >
+              </li>
+              <li>
+                There's a preview of the map below for the commuter rail, but
+                there are other routes available
+                <a target="_blank" href="https://mbtamapper.com/">here</a>!
+              </li>
+            </ul>
 
-            <a
-              href="https://github.com/tandy-c/mbta_mapper"
-              target="_blank"
-              style="width: 10%; display: inline-block; margin-bottom: 10px"
-              ><img
-                id="github-1"
-                src="img/github.png"
-                class="image"
-                width="50"
-                onmouseover="hoverImage('github-1')"
-                onmouseleave="unhoverImage('github-1')"
-                title="View the repository here"
-              />
-            </a>
-            <br />
-            JavaScript:
-            <li style="margin-top: inherit">
-              Leaflet and extension libraries render the map.
-            </li>
-            CSS:
-            <li style="margin-top: inherit">
-              Custom CSS styles leaflet divs and other elements.
-            </li>
-            HTML:
-            <li style="margin-top: inherit">
-              Generated in Python, JavaScript or written by hand.
-            </li>
-            Python:
-            <li style="margin-top: inherit">
-              Pandas/Requests grabs data and dumps it into a SQLite database
-              created by SQLAlchemy.
-            </li>
-            <li style="margin-top: inherit">
-              Uses SQLAlchemy to interract with the database, generating map
-              layers from ORMs and querying data.
-            </li>
-            <li style="margin-top: inherit">
-              Flasks runs the application and export realtime data.
-            </li>
-            <li>
-              This preview shows the commuter rail map. You could view other
-              transit modes
-              <a href="https://mbtamapper.com/" target="_blank">here</a> or at
-              its
-              <a
-                href="https://mbtamapper-beta.azurewebsites.net/"
-                target="_blank"
-                >permanent url.</a
-              >
-            </li>
-            <!-- <img src="img/mapper2.gif" style="width: 90%" /> -->
-            <iframe data-src="http://mbtamapper.com/commuter_rail"> </iframe>
-          </ul>
+            <iframe data-src="https://mbtamapper.com/commuter_rail"> </iframe>
+          </span>
         </span>
 
-        <span class="span_img" onclick="openDrawer('7')">
-          <img src="img/github.png" height="50" width="50" class="image" />
-        </span>
-        <span onclick="openDrawer('7')">
-          <h2>IE3425 Repository</h2>
-          <h4>Helper repo for TA'ing Engineering Database Systems</h4>
-        </span>
-        <span class="span_img" onclick="openDrawer('7')">
+        <span class="span_img" onclick="openDrawer('2')">
           <img
-            src="img/carrot.png"
+            src="src/img/sqlalchemy.png"
+            height="50"
+            width="50"
+            class="image"
+          />
+        </span>
+        <span onclick="openDrawer('2')">
+          <h2>IE3425 Database Generator</h2>
+          <h4>CAG/Tutoring</h4>
+        </span>
+        <span class="span_img" onclick="openDrawer('2')">
+          <img
+            src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
-            id="carrot-7"
+            id="carrot-2"
           />
         </span>
         <!-- <span id="drawer-1" style="display: none;"></span> -->
-        <span
-          id="drawer-7"
-          class="drawer"
-          style="display: none; border-bottom: none"
-        >
-          <ul>
-            <h3>August 2023 - Present</h3>
-            <li>
-              Uses SQLAlchemy and Pandas to create the class database from an
-              excel sheet.
-            </li>
-            <li>
-              I lost the database because I reset my computer and then
-              overcomplicated its recreation.
-            </li>
-          </ul>
+        <span id="drawer-2" class="drawer" style="display: none">
+          <h3>Overcomplication at its finest</h3>
+          <span style="margin-left: 12px">
+            <span class="contact-grid" style="margin: -20px 0px 20px 12px">
+              <a
+                href="https://github.com/tandy-c/NEU-IE3425"
+                target="_blank"
+                style="width: 10%; display: inline-block; margin-bottom: 10px"
+                ><img
+                  id="github-2"
+                  src="src/img/github.png"
+                  class="image"
+                  width="50"
+                  onmouseover="hoverImage('github-2')"
+                  onmouseleave="unhoverImage('github-2')"
+                  title="View the repository here"
+                />
+              </a>
+            </span>
+            <ul>
+              <li>
+                Uses SQLAlchemy and pandas (python) to generate the database
+                normally hand-created by students by reading an excel file
+              </li>
+              <li>
+                I lost my database and way overcomplicated its recreation, but
+                it's easy to use and update
+              </li>
+              <li>
+                I might use this repository for further tutoring and might add
+                more scripts related to the class
+              </li>
+            </ul>
+          </span>
+        </span>
+
+        <span class="span_img" onclick="openDrawer('3')">
+          <img src="src/img/msteams.png" height="50" width="50" class="image" />
+        </span>
+        <span onclick="openDrawer('3')">
+          <h2>Microsoft Teams Bot</h2>
+          <h4>CAG/Tutoring</h4>
+        </span>
+        <span class="span_img" onclick="openDrawer('3')">
+          <img
+            src="src/img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            id="carrot-3"
+          />
+        </span>
+        <!-- <span id="drawer-1" style="display: none;"></span> -->
+        <span id="drawer-3" class="drawer" style="display: none">
+          <h3>My laziness knows no bounds</h3>
+          <span style="margin-left: 12px">
+            <span class="contact-grid" style="margin: -20px 0px 20px 12px">
+              <a
+                href="https://github.com/tandy-c/msteamsbot"
+                target="_blank"
+                style="width: 10%; display: inline-block; margin-bottom: 10px"
+                ><img
+                  id="github-4"
+                  src="src/img/github.png"
+                  class="image"
+                  width="50"
+                  onmouseover="hoverImage('github-4')"
+                  onmouseleave="unhoverImage('github-4')"
+                  title="View the repository here"
+                />
+              </a>
+            </span>
+            <ul>
+              <li>
+                Uses a Microsoft Teams webhook to automate the tutoring message
+                sent to students
+              </li>
+              <li>
+                I spent 4 hours writing and deploying this bot to save me 5
+                minutes of work every day.
+              </li>
+              <li>Was it worth it? Of course it was!</li>
+              <img src="src/img/teams_sc.png" style="width: 75%" />
+            </ul>
+          </span>
         </span>
       </span>
     </div>
 
-    <div class="main" id="contact" style="margin: 2% 0%">
+    <div class="main" id="contact">
       <h1>Contact</h1>
 
       <hr />
@@ -190,7 +257,7 @@
         <a href="mailto:cho.joh@northeastern.edu" target="_blank"
           ><img
             id="email"
-            src="img/email.png"
+            src="src/img/email.png"
             class="image"
             width="50"
             onmouseover="hoverImage('email')"
@@ -202,7 +269,7 @@
           target="_blank"
           ><img
             id="linkedin"
-            src="img/linkedin.png"
+            src="src/img/linkedin.png"
             class="image"
             width="50"
             onmouseover="hoverImage('linkedin')"
@@ -212,7 +279,7 @@
         <a href="https://github.com/tandy-c" target="_blank"
           ><img
             id="github"
-            src="img/github.png"
+            src="src/img/github.png"
             class="image"
             width="50"
             onmouseover="hoverImage('github')"
@@ -228,7 +295,7 @@
       <br />
       <span class="container">
         <span class="span_img" onclick="openDrawer('2')">
-          <img src="img/coe.png" height="50" width="50" class="image" />
+          <img src="src/img/coe.png" height="50" width="50" class="image" />
         </span>
         <span onclick="openDrawer('2')">
           <h2>Northeastern University, College of Engineering</h2>
@@ -236,7 +303,7 @@
         </span>
         <span class="span_img" onclick="openDrawer('2')">
           <img
-            src="img/carrot.png"
+            src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
@@ -250,7 +317,7 @@
         </span>
 
         <span class="span_img" onclick="openDrawer('3')">
-          <img src="img/kcs.jpg" height="50" width="50" class="image" />
+          <img src="src/img/kcs.jpg" height="50" width="50" class="image" />
         </span>
         <span onclick="openDrawer('3')">
           <h2>Keolis Commuter Services</h2>
@@ -258,7 +325,7 @@
         </span>
         <span class="span_img" onclick="openDrawer('3')">
           <img
-            src="img/carrot.png"
+            src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
@@ -308,7 +375,7 @@
           </ul>
         </span>
         <span class="span_img" onclick="openDrawer('4')">
-          <img src="img/amazon.jpg" height="50" width="50" class="image" />
+          <img src="src/img/amazon.jpg" height="50" width="50" class="image" />
         </span>
         <span onclick="openDrawer('4')">
           <h2>Amazon Fulfillment Center</h2>
@@ -316,7 +383,7 @@
         </span>
         <span class="span_img" onclick="openDrawer('4')">
           <img
-            src="img/carrot.png"
+            src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
@@ -354,7 +421,7 @@
       <br />
       <span class="container">
         <span class="span_img" onclick="openDrawer('5')">
-          <img src="img/neu.png" height="50" width="50" class="image" />
+          <img src="src/img/neu.png" height="50" width="50" class="image" />
         </span>
         <span onclick="openDrawer('5')">
           <h2>Northeastern University</h2>
@@ -362,7 +429,7 @@
         </span>
         <span class="span_img" onclick="openDrawer('5')">
           <img
-            src="img/carrot.png"
+            src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
@@ -384,7 +451,7 @@
           </ul>
         </span>
         <span class="span_img" onclick="openDrawer('6')">
-          <img src="img/shs.png" height="50" width="50" class="image" />
+          <img src="src/img/shs.png" height="50" width="50" class="image" />
         </span>
         <span onclick="openDrawer('6')">
           <h2>Sharon High School</h2>
@@ -392,7 +459,7 @@
         </span>
         <span class="span_img" onclick="openDrawer('6')">
           <img
-            src="img/carrot.png"
+            src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
@@ -412,7 +479,7 @@
       </span>
     </div> -->
 
-    <div class="main" id="about" style="margin: 2% 0%">
+    <div class="main" id="about">
       <h1>More About Me</h1>
 
       <hr />
@@ -424,11 +491,9 @@
       <p>
         Other than an interest in public infrastructure, I enjoy sailing,
         running, hiking, biking, exploring towns/cities on foot, driving and
-        gaming. I'm also interested in finance and economics.
+        gaming.
       </p>
     </div>
-
-    <div class="main" id="footer"></div>
 
     <!-- <script src="" async defer></script> -->
   </body>

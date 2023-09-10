@@ -5,6 +5,9 @@
   grid-template-rows: repeat(2, auto);
   border: 2px solid rgba(242, 242, 242, 0.45);
   border-radius: 5px;
+  overflow: hidden;
+  /* background: gray; */
+  cursor: pointer;
 }
 
 .container > span {
@@ -34,7 +37,8 @@
 
 .drawer {
   grid-column: 1/4;
-  padding-left: 50px;
+  padding-left: 15px;
+  cursor: auto;
 }
 
 .contact-grid {

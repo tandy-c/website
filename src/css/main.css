@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: "itc-stone-sans", "montserrat", sans-serif;
+  font-family: "itc-stone-sans-reg", "montserrat", sans-serif;
   height: auto;
-  background-image: url("../img/boston_sharp.png");
+  background-image: url("../img/sunset_2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -41,6 +41,7 @@ h4 {
   font-size: 14pt;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  margin: 2% 0%;
   /* height: inherit; */
   /* border-top: rgba(0, 0, 0, 0.15); */
 }
@@ -56,15 +57,15 @@ h4 {
 }
 
 ul {
-  text-align: left;
-  list-style-position: outside;
+  /* text-align: left; */
+  /* list-style-position: outside; */
   /* list-style-type: circle; */
   font-size: 12pt;
 }
 
 li {
   /* color: #cacaca; */
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-bottom: 10px;
 }
 
@@ -90,4 +91,5 @@ iframe {
   border: none;
   border-radius: 10px;
   aspect-ratio: 16/9;
+  margin-left: 12px;
 }

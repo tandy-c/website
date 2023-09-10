@@ -40,32 +40,45 @@ function openDrawer(
   }
 }
 
-function titleOnLoad(interval = 500) {
-  var image = document.getElementById("titleImage");
-  var title = document.getElementById("titleCard");
+function hoverDrawer(
+  rowId,
+  colArray = ["col-1-", "col-2-", "col-3-"],
+  interval = 250
+) {
+  for (colId of colArray) {
+    var column = document.getElementById(colId + rowId);
 
-  for (_element of [image, title]) {
-    _element.style.display = "none";
+    if (rowId != "1") {
+      column.style.borderTop = "1px solid rgba(242, 242, 242, 0.45)";
+      column.style.marginTop = "-1px";
+    }
+    column.animate({ backgroundColor: "#3F3F3F" }, interval).onfinish =
+      function () {
+        for (colId of colArray) {
+          var columnTest = document.getElementById(colId + rowId);
+          columnTest.style.backgroundColor = "#3F3F3F";
+        }
+      };
   }
+}
 
-  image.style.transform = "translateX(1600px)";
-  title.style.transform = "translateX(-1600px)";
-
-  image.animate(
-    { transform: "translateX(0px)", opacity: [0, 1] },
-    interval
-  ).onfinish = function () {
-    image.style.transform = "translateX(0px)";
-  };
-  title.animate(
-    { transform: "translateX(0px)", opacity: [0, 1] },
-    interval
-  ).onfinish = function () {
-    title.style.transform = "translateX(0px)";
-  };
-
-  for (_element of [image, title]) {
-    _element.style.display = "";
+function unhoverDrawer(
+  rowId,
+  colArray = ["col-1-", "col-2-", "col-3-"],
+  interval = 250
+) {
+  for (colId of colArray) {
+    var column = document.getElementById(colId + rowId);
+    if (rowId != "1") {
+      column.style.borderTop = "none";
+      column.style.marginTop = "0px";
+    }
+    column.animate({ background: "none" }, interval).onfinish = function () {
+      for (colId of colArray) {
+        var columnTest = document.getElementById(colId + rowId);
+        columnTest.style.background = "none";
+      }
+    };
   }
 }
 

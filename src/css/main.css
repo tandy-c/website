@@ -90,6 +90,7 @@ iframe {
   width: 90%;
   border: none;
   border-radius: 10px;
-  aspect-ratio: 16/9;
-  margin-left: 12px;
+  /* aspect-ratio: 16/9; */
+  aspect-ratio: 4/1;
+  margin-left: 40px;
 }

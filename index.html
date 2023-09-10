@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Johan Cho</title>
-    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="My personal website." />
     <meta name="keywords" content="Personal" />
@@ -41,6 +40,7 @@
         width="200"
         class="image"
         id="titleImage"
+        alt="johan"
       />
       <h1 class="titlecard" id="titleCard">Heyo! I'm Johan.</h1>
     </div>
@@ -62,19 +62,43 @@
       <hr />
       <br />
       <span class="container">
-        <span class="span_img" onclick="openDrawer('1')">
-          <img src="src/img/MBTA.png" height="50" width="50" class="image" />
+        <span
+          class="span_img"
+          onclick="openDrawer('1')"
+          onmouseover="hoverDrawer('1')"
+          onmouseleave="unhoverDrawer('1')"
+          id="col-1-1"
+        >
+          <img
+            src="src/img/MBTA.png"
+            height="50"
+            width="50"
+            class="image"
+            alt="T"
+          />
         </span>
-        <span onclick="openDrawer('1')" style="cursor: pointer">
+        <span
+          onclick="openDrawer('1')"
+          onmouseover="hoverDrawer('1')"
+          onmouseleave="unhoverDrawer('1')"
+          id="col-2-1"
+        >
           <h2>MBTA Mapper</h2>
           <h4>Passion project</h4>
         </span>
-        <span class="span_img" onclick="openDrawer('1')">
+        <span
+          class="span_img"
+          onclick="openDrawer('1')"
+          onmouseover="hoverDrawer('1')"
+          onmouseleave="unhoverDrawer('1')"
+          id="col-3-1"
+        >
           <img
             src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
+            alt="carrot"
             id="carrot-1"
           />
         </span>
@@ -95,6 +119,7 @@
                   onmouseover="hoverImage('github-1')"
                   onmouseleave="unhoverImage('github-1')"
                   title="View the repository here"
+                  alt="github"
                 />
               </a>
               <a
@@ -137,28 +162,51 @@
               </li>
             </ul>
 
-            <iframe data-src="https://mbtamapper.com/commuter_rail/"> </iframe>
+            <iframe
+              data-src="https://mbtamapper.com/commuter_rail/"
+              title="commuter rail map"
+            >
+            </iframe>
           </span>
         </span>
 
-        <span class="span_img" onclick="openDrawer('2')">
+        <span
+          class="span_img"
+          onclick="openDrawer('2')"
+          onmouseover="hoverDrawer('2')"
+          onmouseleave="unhoverDrawer('2')"
+          id="col-1-2"
+        >
           <img
             src="src/img/sqlalchemy.png"
             height="50"
             width="50"
+            alt="sqlalchemy"
             class="image"
           />
         </span>
-        <span onclick="openDrawer('2')">
+        <span
+          onclick="openDrawer('2')"
+          onmouseover="hoverDrawer('2')"
+          onmouseleave="unhoverDrawer('2')"
+          id="col-2-2"
+        >
           <h2>IE3425 Database Generator</h2>
           <h4>CAG/Tutoring</h4>
         </span>
-        <span class="span_img" onclick="openDrawer('2')">
+        <span
+          class="span_img"
+          onclick="openDrawer('2')"
+          onmouseover="hoverDrawer('2')"
+          onmouseleave="unhoverDrawer('2')"
+          id="col-3-2"
+        >
           <img
             src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
+            alt="carrot"
             id="carrot-2"
           />
         </span>
@@ -179,6 +227,7 @@
                   onmouseover="hoverImage('github-2')"
                   onmouseleave="unhoverImage('github-2')"
                   title="View the repository here"
+                  alt="github"
                 />
               </a>
             </span>
@@ -199,19 +248,43 @@
           </span>
         </span>
 
-        <span class="span_img" onclick="openDrawer('3')">
-          <img src="src/img/msteams.png" height="50" width="50" class="image" />
+        <span
+          class="span_img"
+          onclick="openDrawer('3')"
+          onmouseover="hoverDrawer('3')"
+          onmouseleave="unhoverDrawer('3')"
+          id="col-1-3"
+        >
+          <img
+            src="src/img/msteams.png"
+            height="50"
+            width="50"
+            class="image"
+            alt="teams"
+          />
         </span>
-        <span onclick="openDrawer('3')">
+        <span
+          onclick="openDrawer('3')"
+          onmouseover="hoverDrawer('3')"
+          onmouseleave="unhoverDrawer('3')"
+          id="col-2-3"
+        >
           <h2>Microsoft Teams Bot</h2>
           <h4>CAG/Tutoring</h4>
         </span>
-        <span class="span_img" onclick="openDrawer('3')">
+        <span
+          class="span_img"
+          onclick="openDrawer('3')"
+          onmouseover="hoverDrawer('3')"
+          onmouseleave="unhoverDrawer('3')"
+          id="col-3-3"
+        >
           <img
             src="src/img/carrot.png"
             height="25"
             width="25"
             class="image"
+            alt="carrot"
             id="carrot-3"
           />
         </span>
@@ -232,6 +305,7 @@
                   onmouseover="hoverImage('github-4')"
                   onmouseleave="unhoverImage('github-4')"
                   title="View the repository here"
+                  alt="github"
                 />
               </a>
             </span>
@@ -245,8 +319,11 @@
                 minutes of work every day.
               </li>
               <li>Was it worth it? Of course it was!</li>
-              <img src="src/img/teams_sc.png" style="width: 75%" />
             </ul>
+            <img
+              src="src/img/teams_sc.png"
+              style="width: 75%; margin-left: 40px"
+            />
           </span>
         </span>
       </span>
@@ -266,6 +343,7 @@
             width="50"
             onmouseover="hoverImage('email')"
             onmouseleave="unhoverImage('email')"
+            alt="email"
           /><img />
         </a>
         <a
@@ -278,6 +356,7 @@
             width="50"
             onmouseover="hoverImage('linkedin')"
             onmouseleave="unhoverImage('linkedin')"
+            alt="linkedin"
           /><img />
         </a>
         <a href="https://github.com/tandy-c" target="_blank"
@@ -288,6 +367,7 @@
             width="50"
             onmouseover="hoverImage('github')"
             onmouseleave="unhoverImage('github')"
+            alt="github"
           /><img />
         </a>
       </span>
@@ -311,6 +391,7 @@
             height="25"
             width="25"
             class="image"
+alt="carrot"
             id="carrot-2"
           />
         </span>
@@ -333,6 +414,7 @@
             height="25"
             width="25"
             class="image"
+alt="carrot"
             id="carrot-3"
           />
         </span>
@@ -391,6 +473,7 @@
             height="25"
             width="25"
             class="image"
+alt="carrot"
             id="carrot-4"
           />
         </span>
@@ -437,6 +520,7 @@
             height="25"
             width="25"
             class="image"
+alt="carrot"
             id="carrot-5"
           />
         </span>
@@ -467,6 +551,7 @@
             height="25"
             width="25"
             class="image"
+alt="carrot"
             id="carrot-6"
           />
         </span>

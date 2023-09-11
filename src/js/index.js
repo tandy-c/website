@@ -52,15 +52,21 @@ function hoverDrawer(
       column.style.borderTop = "1px solid rgba(242, 242, 242, 0.45)";
       column.style.marginTop = "-1px";
     }
-    column.animate({ backgroundColor: "#3F3F3F" }, interval).onfinish =
-      function () {
-        for (colId of colArray) {
-          var columnTest = document.getElementById(colId + rowId);
-          columnTest.style.backgroundColor = "#3F3F3F";
-        }
-      };
+    column.animate(
+      { background: "rgba(255, 255, 255, 0.25)" },
+      interval
+    ).onfinish = function () {
+      for (colId of colArray) {
+        var columnTest = document.getElementById(colId + rowId);
+        columnTest.style.background = "rgba(255, 255, 255, 0.25)";
+      }
+    };
   }
 }
+
+// background: rgba(0, 0, 0, 0.75);
+// -webkit-backdrop-filter: blur(10px);
+//   backdrop-filter: blur(10px);
 
 function unhoverDrawer(
   rowId,

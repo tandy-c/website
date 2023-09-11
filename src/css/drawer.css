@@ -39,6 +39,7 @@
   grid-column: 1/4;
   padding-left: 15px;
   cursor: auto;
+  padding-right: 15px;
 }
 
 .contact-grid {
@@ -46,8 +47,21 @@
   grid-template-columns: 50px 50px 50px;
   column-gap: 20px;
   align-items: left;
+  margin: -20px 0px -7px 12px;
 }
 
 .contact-grid .image {
   margin: 0px 0px;
+}
+.contact-grid.actual_grid {
+  margin: -35px 12px -14px 12px;
+  grid-template-columns: repeat(5, 50px);
+  /* margin: 0px 0px 0px 0px; */
+}
+
+.link_img {
+  width: 10%;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }

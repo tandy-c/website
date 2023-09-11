@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <title>Johan Cho</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      charset="UTF-8"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta content="IE=edge" />
     <meta name="description" content="My personal website." />
     <meta name="keywords" content="Personal" />
     <meta name="author" content="Johan Cho" />
@@ -10,17 +15,14 @@
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
     />
-    <meta
-      name="viewport"
-      charset="UTF-8"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+
     <link href="src/img/johan.favicon" rel="icon" />
     <link rel="stylesheet" href="src/css/navbar.css" />
     <link rel="stylesheet" href="src/css/font.css" />
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="stylesheet" href="src/css/scrollbar.css" />
     <link rel="stylesheet" href="src/css/drawer.css" />
+    <link rel="stylesheet" href="src/css/tooltip.css" />
     <script src="src/js/index.js"></script>
   </head>
 
@@ -105,36 +107,36 @@
         <!-- <span id="drawer-1" style="display: none;"></span> -->
         <span id="drawer-1" class="drawer" style="display: none">
           <h3>View MBTA vehicles in real time!</h3>
-          <span style="margin-left: 12px">
-            <span class="contact-grid" style="margin: -20px 0px 20px 12px">
+          <span>
+            <span class="contact-grid">
               <a
                 href="https://github.com/tandy-c/mbta_mapper"
                 target="_blank"
-                style="width: 10%; display: inline-block; margin-bottom: 10px"
-                ><img
-                  id="github-1"
-                  src="src/img/github.png"
-                  class="image"
-                  width="50"
-                  onmouseover="hoverImage('github-1')"
-                  onmouseleave="unhoverImage('github-1')"
-                  title="View the repository here"
-                  alt="github"
-                />
+                class="link_img"
+                ><span class="tooltip">
+                  <span class="tooltiptext">View the repo!</span
+                  ><img
+                    id="github-1"
+                    src="src/img/github.png"
+                    class="image"
+                    width="50"
+                    onmouseover="hoverImage('github-1')"
+                    onmouseleave="unhoverImage('github-1')"
+                    alt="github"
+                /></span>
               </a>
-              <a
-                href="https://mbtamapper.com/"
-                target="_blank"
-                style="width: 10%; display: inline-block; margin-bottom: 10px"
-                ><img
-                  id="globe-1"
-                  src="src/img/globe.png"
-                  class="image"
-                  width="50"
-                  onmouseover="hoverImage('globe-1')"
-                  onmouseleave="unhoverImage('globe-1')"
-                  title="Go to the site!"
-                /> </a
+              <a href="https://mbtamapper.com/" target="_blank" class="link_img"
+                ><span class="tooltip">
+                  <span class="tooltiptext">View the site!</span
+                  ><img
+                    id="globe-1"
+                    src="src/img/globe.png"
+                    class="image"
+                    width="50"
+                    onmouseover="hoverImage('globe-1')"
+                    onmouseleave="unhoverImage('globe-1')"
+                    title="Go to the site!"
+                /></span> </a
             ></span>
             <ul>
               <li>
@@ -213,22 +215,23 @@
         <!-- <span id="drawer-1" style="display: none;"></span> -->
         <span id="drawer-2" class="drawer" style="display: none">
           <h3>Overcomplication at its finest</h3>
-          <span style="margin-left: 12px">
-            <span class="contact-grid" style="margin: -20px 0px 20px 12px">
+          <span>
+            <span class="contact-grid">
               <a
                 href="https://github.com/tandy-c/NEU-IE3425"
                 target="_blank"
-                style="width: 10%; display: inline-block; margin-bottom: 10px"
-                ><img
-                  id="github-2"
-                  src="src/img/github.png"
-                  class="image"
-                  width="50"
-                  onmouseover="hoverImage('github-2')"
-                  onmouseleave="unhoverImage('github-2')"
-                  title="View the repository here"
-                  alt="github"
-                />
+                class="link_img"
+                ><span class="tooltip">
+                  <span class="tooltiptext">View the repo!</span>
+                  <img
+                    id="github-2"
+                    src="src/img/github.png"
+                    class="image"
+                    width="50"
+                    onmouseover="hoverImage('github-2')"
+                    onmouseleave="unhoverImage('github-2')"
+                    alt="github"
+                /></span>
               </a>
             </span>
             <ul>
@@ -291,28 +294,30 @@
         <!-- <span id="drawer-1" style="display: none;"></span> -->
         <span id="drawer-3" class="drawer" style="display: none">
           <h3>My laziness knows no bounds</h3>
-          <span style="margin-left: 12px">
-            <span class="contact-grid" style="margin: -20px 0px 20px 12px">
+          <span>
+            <span class="contact-grid">
               <a
                 href="https://github.com/tandy-c/msteamsbot"
                 target="_blank"
-                style="width: 10%; display: inline-block; margin-bottom: 10px"
-                ><img
-                  id="github-4"
-                  src="src/img/github.png"
-                  class="image"
-                  width="50"
-                  onmouseover="hoverImage('github-4')"
-                  onmouseleave="unhoverImage('github-4')"
-                  title="View the repository here"
-                  alt="github"
-                />
+                class="link_img"
+                ><span class="tooltip">
+                  <span class="tooltiptext">View the repo!</span
+                  ><img
+                    id="github-4"
+                    src="src/img/github.png"
+                    class="image"
+                    width="50"
+                    onmouseover="hoverImage('github-4')"
+                    onmouseleave="unhoverImage('github-4')"
+                    title="View the repository here"
+                    alt="github"
+                /></span>
               </a>
             </span>
             <ul>
               <li>
-                Uses a Microsoft Teams webhook to automate the tutoring message
-                sent to students
+                Uses a Microsoft Teams webhook and python to automate the
+                tutoring message sent to students
               </li>
               <li>
                 I spent 4 hours writing and deploying this bot to save me 5
@@ -323,6 +328,7 @@
             <img
               src="src/img/teams_sc.png"
               style="width: 75%; margin-left: 40px"
+              alt="teams screenshot"
             />
           </span>
         </span>
@@ -334,41 +340,75 @@
 
       <hr />
       <br />
-      <span class="contact-grid">
+      <br />
+      <span class="contact-grid actual_grid">
         <a href="mailto:cho.joh@northeastern.edu" target="_blank"
-          ><img
-            id="email"
-            src="src/img/email.png"
-            class="image"
-            width="50"
-            onmouseover="hoverImage('email')"
-            onmouseleave="unhoverImage('email')"
-            alt="email"
-          /><img />
+          ><span class="tooltip">
+            <span class="tooltiptext">My school email</span
+            ><img
+              id="email"
+              src="src/img/email.png"
+              class="image"
+              width="50"
+              onmouseover="hoverImage('email')"
+              onmouseleave="unhoverImage('email')"
+              alt="email" /><img
+          /></span>
         </a>
         <a
           href="https://www.linkedin.com/in/johan-cho-38892b1b1/"
           target="_blank"
-          ><img
-            id="linkedin"
-            src="src/img/linkedin.png"
-            class="image"
-            width="50"
-            onmouseover="hoverImage('linkedin')"
-            onmouseleave="unhoverImage('linkedin')"
-            alt="linkedin"
-          /><img />
+          ><span class="tooltip">
+            <span class="tooltiptext">My linkedin</span
+            ><img
+              id="linkedin"
+              src="src/img/linkedin.png"
+              class="image"
+              width="50"
+              onmouseover="hoverImage('linkedin')"
+              onmouseleave="unhoverImage('linkedin')"
+              alt="linkedin" /><img
+          /></span>
         </a>
         <a href="https://github.com/tandy-c" target="_blank"
-          ><img
-            id="github"
-            src="src/img/github.png"
-            class="image"
-            width="50"
-            onmouseover="hoverImage('github')"
-            onmouseleave="unhoverImage('github')"
-            alt="github"
-          /><img />
+          ><span class="tooltip">
+            <span class="tooltiptext">My github</span
+            ><img
+              id="github"
+              src="src/img/github.png"
+              class="image"
+              width="50"
+              onmouseover="hoverImage('github')"
+              onmouseleave="unhoverImage('github')"
+              alt="github" /></span
+          ><img /> </a
+        ><a href="https://www.facebook.com/johan.cho.927" target="_blank"
+          ><span class="tooltip">
+            <span class="tooltiptext">My facebook</span
+            ><img
+              id="facebook"
+              src="src/img/facebook.png"
+              class="image"
+              width="50"
+              onmouseover="hoverImage('facebook')"
+              onmouseleave="unhoverImage('facebook')"
+              alt="facebook" /></span
+          ><img /> </a
+        ><a
+          href="https://www.youtube.com/channel/UCP91LPgRFY03YoIGrmuMH9A"
+          target="_blank"
+          ><span class="tooltip">
+            <span class="tooltiptext"
+              >My youtube (haven't uploaded in a long time)</span
+            ><img
+              id="youtube"
+              src="src/img/youtube.png"
+              class="image"
+              width="50"
+              onmouseover="hoverImage('youtube')"
+              onmouseleave="unhoverImage('youtube')"
+              alt="youtube" /></span
+          ><img />
         </a>
       </span>
     </div>

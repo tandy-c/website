@@ -32,6 +32,7 @@
 
   color: black;
   z-index: 100;
+  -webkit-animation: fadeIn 250ms;
   animation: fadeIn 250ms;
 }
 /* .navbar:hover{

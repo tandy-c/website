@@ -34,6 +34,8 @@ h4 {
   background: none;
   z-index: 100000000;
   /* background: rgba(0, 0, 0, 0.8); */
+  /* border-top: 3px solid rgba(0, 0, 0, 0.9);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.9); */
   overflow: hidden;
   padding: 14px 16px;
   /* border: 3px solid black; */
@@ -43,9 +45,9 @@ h4 {
   backdrop-filter: blur(10px);
   margin: 2% 0%;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.75) 10% 90%,
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.8) 5% 95%,
+    rgba(0, 0, 0, 0.7)
   );
   /* height: inherit; */
   /* border-top: rgba(0, 0, 0, 0.15); */

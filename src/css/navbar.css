@@ -32,8 +32,8 @@
 
   color: black;
   z-index: 100;
-  -webkit-animation: fadeIn 250ms;
   animation: fadeIn 250ms;
+  -webkit-animation: fadeIn 250ms;
 }
 /* .navbar:hover{
   border-bottom: ;
@@ -45,4 +45,8 @@
 
 .navbar a:active {
   color: #000000;
+}
+
+.navbar .right {
+  float: right;
 }

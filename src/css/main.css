@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "itc-stone-sans-reg", "montserrat", sans-serif;
   height: auto;
-  background-image: url("../img/sunset_2.jpeg");
+  background-image: url("../img/sunset_2_upscaled.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -100,5 +100,34 @@ iframe {
   border-radius: 10px;
   /* aspect-ratio: 16/9; */
   aspect-ratio: 4/1;
+  margin-left: 40px;
+}
+
+#typewriter {
+  text-align: center;
+  /* font-size: 20pt; */
+}
+
+.title_h2 {
+  text-align: center;
+  color: #888888;
+}
+
+#title {
+  margin: 17% 0%;
+}
+
+/* #typewriter::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blinkIn 0s 1s forwards, blinkOut 0.5s 2.5s forwards;
+  visibility: hidden;
+} */
+.teams_sc {
+  width: 75%;
+  margin-left: 40px;
+}
+
+.footer {
   margin-left: 40px;
 }

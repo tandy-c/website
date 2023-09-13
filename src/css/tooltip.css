@@ -1,6 +1,7 @@
 .tooltip {
   position: relative;
   display: inline-block;
+  max-height: 100%;
   /* border-bottom: 1px dotted black; */
 }
 
@@ -40,24 +41,4 @@
   visibility: visible;
   -webkit-animation: fadeIn 250ms;
   animation: fadeIn 250ms;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.9;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.9;
-  }
 }

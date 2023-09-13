@@ -54,8 +54,9 @@
   margin: 0px 0px;
 }
 .contact-grid.actual_grid {
-  margin: -35px 12px -14px 12px;
+  margin: -35px 12px 10px 12px;
   grid-template-columns: repeat(5, 50px);
+  grid-template-rows: 50px;
   /* margin: 0px 0px 0px 0px; */
 }
 

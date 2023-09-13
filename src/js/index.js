@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  // titleOnLoad();
+  typeWriter();
 });
 
 function openDrawer(
@@ -103,20 +103,28 @@ function unhoverImage(image_id, interval = 250) {
     image.style.transform = "scale(1)";
   };
 }
-// function loadHiddenIframes(span_id) {
-//   var span = document.getElementById(span_id);
-//   var iframes = span.getElementsByTagName("iframe");
-//   for (f of iframes) {
-//     f.src = iframe.dataset.src;
-//   }
-// }
 
-// $(".hidden_element").show(function () {
-//   // Find the iframes within our newly-visible element
-//   $(this)
-//     .find("iframe")
-//     .prop("src", function () {
-//       // Set their src attribute to the value of data-src
-//       return $(this).data("src");
-//     });
-// });
+function typeWriter() {
+  const stringArray = [
+    "'m a runner.",
+    "'m a biker.",
+    " listen to lots of music.",
+    "'m a sailor.",
+    " like SQL.",
+    "'m a gamer.",
+    " love walking around Boston.",
+    `'m a "dunkie junkie."`,
+    "'m a dog person.",
+  ];
+
+  new TypeIt("#typewriter", {
+    strings: stringArray,
+    speed: 150,
+    deleteSpeed: 50,
+    // speed: 150,
+    loop: true,
+    waitUntilVisible: true,
+    breakLines: false,
+    nextStringDelay: [2500, 500],
+  }).go();
+}

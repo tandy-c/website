@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="src/css/scrollbar.css" />
     <link rel="stylesheet" href="src/css/drawer.css" />
     <link rel="stylesheet" href="src/css/tooltip.css" />
+    <link rel="stylesheet" href="src/css/animations.css" />
     <script src="src/js/index.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   </head>
 
   <body>
@@ -32,10 +34,10 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <!-- <a href="#experience">Experience</a> -->
-      <a href="#" style="float: right">Johan Cho</a>
+      <a href="#" class="right">Johan Cho</a>
     </div>
     <!-- <div onload="titleOnLoad()"></div> -->
-    <div class="main" style="margin: 17% 0%">
+    <div class="main" id="title">
       <img
         src=" src/img/johan.png"
         height="200"
@@ -44,11 +46,12 @@
         id="titleImage"
         alt="johan"
       />
-      <h1 class="titlecard" id="titleCard">Heyo! I'm Johan.</h1>
+      <h1 class="titlecard" id="titleCard">Heyo! I'm Johan,</h1>
+      <h2 class="title_h2">and I<span id="typewriter"></span></h2>
     </div>
 
     <div class="main">
-      <h1>About Me</h1>
+      <h1 id="about">About Me</h1>
       <h4 style="margin-bottom: 15px">
         A 3rd year "Industrial Engineer" at Northeastern University.
       </h4>
@@ -56,6 +59,13 @@
       <p>
         I'm from Sharon, Massachusetts and I'm interested in data science and
         the backend.
+      </p>
+      <p>
+        When it came time to apply to college, my dad pushed me to apply as to
+        schools as a computer science major. I didn't want to code (how times
+        change...), so I applied as an industrial engineer because I wanted to
+        be an engineer but I had no realistic goals back then, so I chose the
+        broadest major.
       </p>
     </div>
 
@@ -113,28 +123,32 @@
                 href="https://github.com/tandy-c/mbta_mapper"
                 target="_blank"
                 class="link_img"
-                ><span class="tooltip">
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('github-1')"
+                  onmouseleave="unhoverImage('github-1')"
+                >
                   <span class="tooltiptext">View the repo!</span
                   ><img
                     id="github-1"
                     src="src/img/github.png"
                     class="image"
                     width="50"
-                    onmouseover="hoverImage('github-1')"
-                    onmouseleave="unhoverImage('github-1')"
                     alt="github"
                 /></span>
               </a>
               <a href="https://mbtamapper.com/" target="_blank" class="link_img"
-                ><span class="tooltip">
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('globe-1')"
+                  onmouseleave="unhoverImage('globe-1')"
+                >
                   <span class="tooltiptext">View the site!</span
                   ><img
                     id="globe-1"
                     src="src/img/globe.png"
                     class="image"
                     width="50"
-                    onmouseover="hoverImage('globe-1')"
-                    onmouseleave="unhoverImage('globe-1')"
                     title="Go to the site!"
                 /></span> </a
             ></span>
@@ -196,7 +210,7 @@
           id="col-2-2"
         >
           <h2>IE3425 Database Generator</h2>
-          <h4>CAG/Tutoring</h4>
+          <h4>Personal/IE3425 Course Assistant Grader</h4>
         </span>
         <span
           class="span_img"
@@ -223,15 +237,17 @@
                 href="https://github.com/tandy-c/NEU-IE3425"
                 target="_blank"
                 class="link_img"
-                ><span class="tooltip">
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('github-2')"
+                  onmouseleave="unhoverImage('github-2')"
+                >
                   <span class="tooltiptext">View the repo!</span>
                   <img
                     id="github-2"
                     src="src/img/github.png"
                     class="image"
                     width="50"
-                    onmouseover="hoverImage('github-2')"
-                    onmouseleave="unhoverImage('github-2')"
                     alt="github"
                 /></span>
               </a>
@@ -275,7 +291,7 @@
           id="col-2-3"
         >
           <h2>Microsoft Teams Bot</h2>
-          <h4>CAG/Tutoring</h4>
+          <h4>Personal/IE3425 Tutorer</h4>
         </span>
         <span
           class="span_img"
@@ -293,7 +309,6 @@
             id="carrot-3"
           />
         </span>
-        <!-- <span id="drawer-1" style="display: none;"></span> -->
         <span id="drawer-3" class="drawer" style="display: none">
           <h3>My laziness knows no bounds</h3>
           <span>
@@ -302,15 +317,17 @@
                 href="https://github.com/tandy-c/msteamsbot"
                 target="_blank"
                 class="link_img"
-                ><span class="tooltip">
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('github-4')"
+                  onmouseleave="unhoverImage('github-4')"
+                >
                   <span class="tooltiptext">View the repo!</span
                   ><img
                     id="github-4"
                     src="src/img/github.png"
                     class="image"
                     width="50"
-                    onmouseover="hoverImage('github-4')"
-                    onmouseleave="unhoverImage('github-4')"
                     title="View the repository here"
                     alt="github"
                 /></span>
@@ -329,7 +346,7 @@
             </ul>
             <img
               src="src/img/teams_sc.png"
-              style="width: 75%; margin-left: 40px"
+              class="teams_sc"
               alt="teams screenshot"
             />
           </span>
@@ -345,61 +362,73 @@
       <br />
       <span class="contact-grid actual_grid">
         <a href="mailto:cho.joh@northeastern.edu" target="_blank"
-          ><span class="tooltip">
+          ><span
+            class="tooltip"
+            onmouseover="hoverImage('email')"
+            onmouseleave="unhoverImage('email')"
+          >
             <span class="tooltiptext">My school email</span
             ><img
               id="email"
               src="src/img/email.png"
               class="image"
               width="50"
-              onmouseover="hoverImage('email')"
-              onmouseleave="unhoverImage('email')"
-              alt="email" /><img
+              alt="email"
           /></span>
         </a>
         <a
           href="https://www.linkedin.com/in/johan-cho-38892b1b1/"
           target="_blank"
-          ><span class="tooltip">
+          ><span
+            class="tooltip"
+            onmouseover="hoverImage('linkedin')"
+            onmouseleave="unhoverImage('linkedin')"
+          >
             <span class="tooltiptext">My linkedin</span
             ><img
               id="linkedin"
               src="src/img/linkedin.png"
               class="image"
               width="50"
-              onmouseover="hoverImage('linkedin')"
-              onmouseleave="unhoverImage('linkedin')"
-              alt="linkedin" /><img
+              alt="linkedin"
           /></span>
         </a>
         <a href="https://github.com/tandy-c" target="_blank"
-          ><span class="tooltip">
+          ><span
+            class="tooltip"
+            onmouseover="hoverImage('github')"
+            onmouseleave="unhoverImage('github')"
+          >
             <span class="tooltiptext">My github</span
             ><img
               id="github"
               src="src/img/github.png"
               class="image"
               width="50"
-              onmouseover="hoverImage('github')"
-              onmouseleave="unhoverImage('github')"
-              alt="github" /></span
-          ><img /> </a
+              alt="github"
+          /></span> </a
         ><a href="https://www.facebook.com/johan.cho.927" target="_blank"
-          ><span class="tooltip">
+          ><span
+            class="tooltip"
+            onmouseover="hoverImage('facebook')"
+            onmouseleave="unhoverImage('facebook')"
+          >
             <span class="tooltiptext">My facebook</span
             ><img
               id="facebook"
               src="src/img/facebook.png"
               class="image"
               width="50"
-              onmouseover="hoverImage('facebook')"
-              onmouseleave="unhoverImage('facebook')"
-              alt="facebook" /></span
-          ><img /> </a
+              alt="facebook"
+          /></span> </a
         ><a
           href="https://www.youtube.com/channel/UCP91LPgRFY03YoIGrmuMH9A"
           target="_blank"
-          ><span class="tooltip">
+          ><span
+            class="tooltip"
+            onmouseover="hoverImage('youtube')"
+            onmouseleave="unhoverImage('youtube')"
+          >
             <span class="tooltiptext"
               >My youtube (haven't uploaded in a long time)</span
             ><img
@@ -407,28 +436,50 @@
               src="src/img/youtube.png"
               class="image"
               width="50"
-              onmouseover="hoverImage('youtube')"
-              onmouseleave="unhoverImage('youtube')"
-              alt="youtube" /></span
-          ><img />
+              alt="youtube"
+            />
+          </span>
         </a>
       </span>
     </div>
 
-    <div class="main" id="about">
-      <h1>More About Me</h1>
-
+    <div class="main">
+      <h1>About this website</h1>
       <hr />
+
+      <a
+        href="https://github.com/tandy-c/msteamsbot"
+        target="_blank"
+        class="link_img"
+        ><span
+          class="tooltip"
+          onmouseover="hoverImage('github-5')"
+          onmouseleave="unhoverImage('github-5')"
+        >
+          <span class="tooltiptext">View the repo!</span
+          ><img
+            id="github-4"
+            src="src/img/github.png"
+            class="image"
+            width="50"
+            title="View the repository here"
+            alt="github"
+        /></span>
+      </a>
       <p>
-        When I lived in Stoughton, I took the train into Back Bay every day for
-        preschool. It fostered an early fascination in trains, public transit
-        and infrastructure in general.
+        This website was developed by me and is hosted with github pages with
+        it's permanent url
       </p>
-      <p>
-        Other than an interest in public infrastructure, I enjoy sailing,
-        running, hiking, biking, exploring towns/cities on foot, driving and
-        gaming.
-      </p>
+
+      <a href="https://tandy-c.github.io/website/">here</a>. It currently uses
+      the following javascript modules:
+
+      <ul>
+        <li>
+          <a href="https://www.typeitjs.com/" target="_blank">TypeIt</a> for the
+          animated typing
+        </li>
+      </ul>
     </div>
   </body>
 </html>

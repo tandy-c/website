@@ -61,11 +61,17 @@
         the backend.
       </p>
       <p>
-        When it came time to apply to college, my dad pushed me to apply as to
-        schools as a computer science major. I didn't want to code (how times
-        change...), so I applied as an industrial engineer because I wanted to
-        be an engineer but I had no realistic goals back then, so I chose the
-        broadest major.
+        When it came time to apply to college, my dad pushed me to apply as a
+        computer science major. I didn't want to code (how times change...), so
+        I applied as an industrial engineer because I wanted to be an engineer
+        but I had no realistic goals back then, so I chose the broadest major.
+      </p>
+      <p>
+        I know python, and I could slap some JavaScript, HTML and CSS together
+        to make a website, but I really enjoy SQL. The lack of Computer Science
+        courses bites me in the back; I know syntax and how to make stuff work,
+        but I don't know any of the fundementals behind what I do. I think if I
+        get any chance to learn, I'll become a lot better at what I do.
       </p>
     </div>
 
@@ -116,7 +122,12 @@
         </span>
         <!-- <span id="drawer-1" style="display: none;"></span> -->
         <span id="drawer-1" class="drawer" style="display: none">
-          <h3>View MBTA vehicles in real time!</h3>
+          <h3>
+            View MBTA vehicles in real time
+            <a href="https://mbtamapper.com" target="_blank" class="link_img"
+              >@mbtamapper.com</a
+            >
+          </h3>
           <span>
             <span class="contact-grid">
               <a
@@ -148,11 +159,23 @@
                     id="globe-1"
                     src="src/img/globe.png"
                     class="image"
+                    alt="globe"
                     width="50"
                     title="Go to the site!"
                 /></span> </a
             ></span>
             <ul>
+              <li>
+                There were really no websites (<a
+                  target="_blank"
+                  href="https://mbta.sites.fas.harvard.edu/T/commuter-rail-map.html"
+                  >this site</a
+                >
+                doesn't count because it's bad) that showed the MBTA in real
+                time on a map. I became dependant on Keolis' internal map, but I
+                lost access to it after my co-op ended and thus I made it to
+                satisfy myself.
+              </li>
               <li>
                 Uses requests, pandas and SQLAlchemy (python) to generate and
                 insert both static and real-time data into a SQLite database
@@ -160,18 +183,6 @@
               <li>
                 Renders with leaflet, a JavaScript library for interactive maps
                 and has some html and css to style it
-              </li>
-              <li>
-                I made it after I realized I was dependent on Keolis's internal
-                realtime map for my commute and wanted to make something that I
-                could use, also
-                <a
-                  target="_blank"
-                  href="https://mbta.sites.fas.harvard.edu/T/commuter-rail-map.html"
-                  >this site</a
-                >
-                was really the only place to view the MBTA like this, but it
-                looks like it's straight outta 1998.
               </li>
               <li>
                 There's a preview of the map below for the commuter rail, but
@@ -254,12 +265,12 @@
             </span>
             <ul>
               <li>
-                Uses SQLAlchemy and pandas (python) to generate the database
-                normally hand-created by students by reading an excel file
+                I lost my database and way overcomplicated its recreation, but
+                it's easy to update and regenerate.
               </li>
               <li>
-                I lost my database and way overcomplicated its recreation, but
-                it's easy to use update and regenerate.
+                Uses SQLAlchemy and pandas (python) to generate the database
+                normally hand-created by students by reading an excel file
               </li>
               <li>
                 I might use this repository for further tutoring and might add
@@ -335,12 +346,13 @@
             </span>
             <ul>
               <li>
-                Uses a Microsoft Teams webhook and python to automate the
-                tutoring message sent to students
+                I'm too lazy to write the tutoring message every day, so I spent
+                four hours writing and deploying this stupid bot with Docker and
+                Azure to save me five minutes of time every day.
               </li>
               <li>
-                I spent 4 hours writing and deploying this bot to save me 5
-                minutes of work every day.
+                Uses a Microsoft Teams webhook and python to automate the
+                tutoring message sent to students
               </li>
               <li>Was it worth it? Of course it was!</li>
             </ul>
@@ -351,6 +363,323 @@
             />
           </span>
         </span>
+      </span>
+    </div>
+    <div class="main">
+      <h1>School Projects</h1>
+      <hr />
+      <span class="container">
+        <span
+          class="span_img"
+          onclick="openDrawer('4')"
+          onmouseover="hoverDrawer('4')"
+          onmouseleave="unhoverDrawer('4')"
+          id="col-1-4"
+        >
+          <img
+            src="src/img/tf2.png"
+            height="50"
+            width="50"
+            class="image"
+            alt="teamfortress"
+          />
+        </span>
+        <span
+          onclick="openDrawer('4')"
+          onmouseover="hoverDrawer('4')"
+          onmouseleave="unhoverDrawer('4')"
+          id="col-2-4"
+        >
+          <h2>Team Fortress 2 Website</h2>
+          <h4>IE3425 Final Project</h4>
+        </span>
+        <span
+          class="span_img"
+          onclick="openDrawer('4')"
+          onmouseover="hoverDrawer('4')"
+          onmouseleave="unhoverDrawer('4')"
+          id="col-3-4"
+        >
+          <img
+            src="src/img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            alt="carrot"
+            id="carrot-4"
+          />
+        </span>
+        <span id="drawer-4" class="drawer" style="display: none">
+          <h3>A website for competitive tf2.</h3>
+          <span>
+            <span class="contact-grid">
+              <a
+                href="https://www1.coe.neu.edu/~johancho/project/"
+                target="_blank"
+                class="link_img"
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('globe-2')"
+                  onmouseleave="unhoverImage('globe-2')"
+                >
+                  <span class="tooltiptext">View the site!</span
+                  ><img
+                    id="globe-2"
+                    src="src/img/globe.png"
+                    class="image"
+                    width="50"
+                    alt="globe"
+                    title="Go to the site!"
+                /></span>
+              </a>
+            </span>
+            <ul>
+              <li>
+                This project was supposed to combine a front, middle and backend
+                to create a workable website of our own violation. In my case,
+                the user of the website would've queried the database for
+                information on compeitive team fortress 2 players.
+              </li>
+              <li>
+                We ran out of time towards the end of the semester, so there was
+                no interconnectivity between the front and backend.
+              </li>
+              <li>
+                I just put it here to show how far I've come since this taking
+                this course. I would never organize a directory like this, nor
+                would I use pure sqlite in python; I would use SQLAlchemy.
+              </li>
+            </ul>
+          </span>
+        </span>
+
+        <span
+          class="span_img"
+          onclick="openDrawer('5')"
+          onmouseover="hoverDrawer('5')"
+          onmouseleave="unhoverDrawer('5')"
+          id="col-1-5"
+        >
+          <img
+            src="src/img/startrucks.png"
+            height="50"
+            width="50"
+            class="image"
+            alt="teams"
+          />
+        </span>
+        <span
+          onclick="openDrawer('5')"
+          onmouseover="hoverDrawer('5')"
+          onmouseleave="unhoverDrawer('5')"
+          id="col-2-5"
+        >
+          <h2>Starbucks Layout Improvement</h2>
+          <h4>IE2310 Final Project</h4>
+        </span>
+        <span
+          class="span_img"
+          onclick="openDrawer('5')"
+          onmouseover="hoverDrawer('5')"
+          onmouseleave="unhoverDrawer('5')"
+          id="col-3-5"
+        >
+          <img
+            src="src/img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            alt="carrot"
+            id="carrot-5"
+          />
+        </span>
+        <span id="drawer-5" class="drawer" style="display: none">
+          <h3>Optimizated NEU starbucks layout.</h3>
+          <span>
+            <span class="contact-grid">
+              <a
+                href="https://docs.google.com/document/d/1S8s8DrhG35P3l1uizph_Plc6JiZnZSe4/edit?usp=sharing&ouid=111815965865952679739&rtpof=true&sd=true"
+                target="_blank"
+                class="link_img"
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('word-1')"
+                  onmouseleave="unhoverImage('word-1')"
+                >
+                  <span class="tooltiptext"
+                    >View the report (formatting was corrupted)!</span
+                  ><img
+                    id="word-1"
+                    src="src/img/word.png"
+                    class="image"
+                    width="50"
+                    title="Go to the site!"
+                /></span>
+              </a>
+              <a
+                href="https://docs.google.com/presentation/d/1nYvDKau7ufT_9a2q-3SS-Y8E5EvX0jLrVO2do6xl7wU/edit#slide=id.p"
+                target="_blank"
+                class="link_img"
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('powerpoint-1')"
+                  onmouseleave="unhoverImage('powerpoint-1')"
+                >
+                  <span class="tooltiptext">View the powerpoint!</span
+                  ><img
+                    id="powerpoint-1"
+                    src="src/img/powerpoint.png"
+                    class="image"
+                    width="50"
+                    title="Go to the site!"
+                /></span>
+              </a>
+            </span>
+            <ul>
+              <li>
+                Led a group of 5 students to optimize the Starbucks at
+                Northeastern's layout, notorious for its long wait times.
+              </li>
+              <li>
+                I delivered the diagrams, the math, some data collection, the
+                report and the powerpoint.
+              </li>
+              <li>
+                I learned both about layout improvement techniques, autocad, and
+                leadership, particually under a time crunch scenario.
+              </li>
+              <li>
+                The document's formatting is messed up for some reason.
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1womXQcGZeLwTjsqa4IEgqrTh-kv5qkdU/view?usp=sharing"
+                  >Here's</a
+                >
+                what was submitted.
+              </li>
+            </ul>
+            <img
+              src="src/img/startrucks_layout.png"
+              class="teams_sc"
+              alt="teams screenshot"
+              title="Improved layout."
+            />
+          </span>
+        </span>
+        <!-- 
+        <span
+          class="span_img"
+          onclick="openDrawer('6')"
+          onmouseover="hoverDrawer('6')"
+          onmouseleave="unhoverDrawer('6')"
+          id="col-1-6"
+        >
+          <img
+            src="src/img/startrucks.png"
+            height="50"
+            width="50"
+            class="image"
+            alt="teams"
+          />
+        </span>
+        <span
+          onclick="openDrawer('6')"
+          onmouseover="hoverDrawer('6')"
+          onmouseleave="unhoverDrawer('6')"
+          id="col-2-6"
+        >
+          <h2>Crazy Hoops</h2>
+          <h4>GE1502 Final Project</h4>
+        </span>
+        <span
+          class="span_img"
+          onclick="openDrawer('6')"
+          onmouseover="hoverDrawer('6')"
+          onmouseleave="unhoverDrawer('6')"
+          id="col-3-6"
+        >
+          <img
+            src="src/img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            alt="carrot"
+            id="carrot-6"
+          />
+        </span>
+        <span id="drawer-6" class="drawer" style="display: none">
+          <h3>A basketball-like carnival game.</h3>
+          <span>
+            <span class="contact-grid">
+              <a
+                href="https://docs.google.com/document/d/1S8s8DrhG35P3l1uizph_Plc6JiZnZSe4/edit?usp=sharing&ouid=111815965865952679739&rtpof=true&sd=true"
+                target="_blank"
+                class="link_img"
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('word-1')"
+                  onmouseleave="unhoverImage('word-1')"
+                >
+                  <span class="tooltiptext"
+                    >View the report (formatting was corrupted)!</span
+                  ><img
+                    id="word-1"
+                    src="src/img/word.png"
+                    class="image"
+                    width="50"
+                    title="Go to the site!"
+                /></span>
+              </a>
+              <a
+                href="https://docs.google.com/presentation/d/1nYvDKau7ufT_9a2q-3SS-Y8E5EvX0jLrVO2do6xl7wU/edit#slide=id.p"
+                target="_blank"
+                class="link_img"
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('powerpoint-1')"
+                  onmouseleave="unhoverImage('powerpoint-1')"
+                >
+                  <span class="tooltiptext">View the powerpoint!</span
+                  ><img
+                    id="powerpoint-1"
+                    src="src/img/powerpoint.png"
+                    class="image"
+                    width="50"
+                    title="Go to the site!"
+                /></span>
+              </a>
+            </span>
+            <ul>
+              <li>
+                Led a group of 5 students to optimize the Starbucks at
+                Northeastern's layout, notorious for its long wait times.
+              </li>
+              <li>
+                I delivered the diagrams, the math, some data collection, the
+                report and the powerpoint.
+              </li>
+              <li>
+                I learned both about layout improvement techniques, autocad, and
+                leadership, particually under a time crunch scenario.
+              </li>
+              <li>
+                The document's formatting is messed up for some reason.
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1womXQcGZeLwTjsqa4IEgqrTh-kv5qkdU/view?usp=sharing"
+                  >Here's</a
+                >
+                what was submitted.
+              </li>
+            </ul>
+            <img
+              src="src/img/startrucks_layout.png"
+              class="teams_sc"
+              alt="teams screenshot"
+              title="Improved layout."
+            />
+          </span>
+        </span> -->
       </span>
     </div>
 
@@ -443,14 +772,19 @@
       </span>
     </div>
 
-    <div class="main">
-      <h1>About this website</h1>
-      <hr />
+    <div class="main footer">
+      <!-- <h1>About this website</h1>
+      <hr /> -->
 
-      <a
+      <p>
+        This website was developed by me and hosted with
+        <a href="https://github.com/tandy-c/website">github pages</a>.
+      </p>
+      <!-- <a
         href="https://github.com/tandy-c/website"
         target="_blank"
         class="link_img"
+        style="margin-right: 15px"
         ><span
           class="tooltip"
           onmouseover="hoverImage('github-5')"
@@ -461,16 +795,13 @@
             id="github-5"
             src="src/img/github.png"
             class="image"
-            width="50"
+            width="25"
             title="View the repository here"
             alt="github"
         /></span>
-      </a>
-      <p>
-        This website was developed by me and is hosted with github pages with
-        it's permanent url
+      </a> -->
 
-        <a href="https://tandy-c.github.io/website/">here</a>. It currently uses
+      <!-- It currently uses
         the following javascript modules:
       </p>
       <ul>
@@ -478,7 +809,7 @@
           <a href="https://www.typeitjs.com/" target="_blank">TypeIt</a> for the
           animated typing
         </li>
-      </ul>
+      </ul> -->
     </div>
   </body>
 </html>

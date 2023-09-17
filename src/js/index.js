@@ -48,10 +48,10 @@ function hoverDrawer(
   for (colId of colArray) {
     var column = document.getElementById(colId + rowId);
 
-    if (rowId != "1") {
-      column.style.borderTop = "1px solid rgba(242, 242, 242, 0.45)";
-      column.style.marginTop = "-1px";
-    }
+    // if (rowId != "1") {
+    //   // column.style.borderTop = "1px solid rgba(242, 242, 242, 0.45)";
+    //   // column.style.marginTop = "-1px";
+    // }
     column.animate(
       { background: "rgba(255, 255, 255, 0.25)" },
       interval
@@ -64,10 +64,6 @@ function hoverDrawer(
   }
 }
 
-// background: rgba(0, 0, 0, 0.75);
-// -webkit-backdrop-filter: blur(10px);
-//   backdrop-filter: blur(10px);
-
 function unhoverDrawer(
   rowId,
   colArray = ["col-1-", "col-2-", "col-3-"],
@@ -75,10 +71,10 @@ function unhoverDrawer(
 ) {
   for (colId of colArray) {
     var column = document.getElementById(colId + rowId);
-    if (rowId != "1") {
-      column.style.borderTop = "none";
-      column.style.marginTop = "0px";
-    }
+    // if (rowId != "1") {
+    //   // column.style.borderTop = "none";
+    //   column.style.marginTop = "0px";
+    // }
     column.animate({ background: "none" }, interval).onfinish = function () {
       for (colId of colArray) {
         var columnTest = document.getElementById(colId + rowId);
@@ -107,6 +103,7 @@ function unhoverImage(image_id, interval = 250) {
 function typeWriter() {
   const stringArray = [
     "'m a runner.",
+    " ride trains.",
     "'m a biker.",
     " listen to lots of music.",
     "'m a sailor.",

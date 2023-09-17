@@ -127,3 +127,19 @@ iframe {
   width: 75%;
   margin-left: 40px;
 }
+
+p {
+  font-size: 12pt;
+}
+
+.footer {
+  /* margin-top: 10%; */
+  margin-bottom: 0%;
+  font-size: 10pt;
+  text-align: center;
+  color: #888888;
+}
+
+.footer p {
+  font-size: 10pt;
+}

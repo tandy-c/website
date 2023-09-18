@@ -143,3 +143,8 @@ p {
 .footer p {
   font-size: 10pt;
 }
+
+.spotifyiFrame {
+  border-radius: 12px;
+  margin-bottom: -20px;
+}

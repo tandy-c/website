@@ -67,12 +67,29 @@
         but I had no realistic goals back then, so I chose the broadest major.
       </p>
       <p>
-        I know python, and I could slap some JavaScript, HTML and CSS together
+        I know Python, and I could slap some JavaScript, HTML and CSS together
         to make a website, but I really enjoy SQL. The lack of Computer Science
         courses bites me in the back; I know syntax and how to make stuff work,
         but I don't know any of the fundementals behind what I do. I think if I
         get any chance to learn, I'll become a lot better at what I do.
       </p>
+
+      <!-- <p>
+        My city has given me so much, yet it expects nothing in return. I feel
+        like I've given back, however.
+      </p> -->
+
+      <h2>Current favorite song</h2>
+      <iframe
+        class="spotifyiFrame"
+        src="https://open.spotify.com/embed/track/0IsB9kYyUfWVxFP85bFAmX?utm_source=generator&theme=0"
+        width="120%"
+        height="120"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
     </div>
 
     <div class="main" id="projects">
@@ -82,7 +99,7 @@
       <span class="container">
         <span
           class="span_img"
-          onclick="openDrawer('1')"
+          onclick="openDrawer('1', 250,'https://mbtamapper.com/commuter_rail/')"
           onmouseover="hoverDrawer('1')"
           onmouseleave="unhoverDrawer('1')"
           id="col-1-1"
@@ -96,7 +113,7 @@
           />
         </span>
         <span
-          onclick="openDrawer('1')"
+          onclick="openDrawer('1', 250, 'https://mbtamapper.com/commuter_rail/')"
           onmouseover="hoverDrawer('1')"
           onmouseleave="unhoverDrawer('1')"
           id="col-2-1"
@@ -106,7 +123,7 @@
         </span>
         <span
           class="span_img"
-          onclick="openDrawer('1')"
+          onclick="openDrawer('1', 250,'https://mbtamapper.com/commuter_rail/')"
           onmouseover="hoverDrawer('1')"
           onmouseleave="unhoverDrawer('1')"
           id="col-3-1"
@@ -172,17 +189,18 @@
                   >this site</a
                 >
                 doesn't count because it's bad) that showed the MBTA in real
-                time on a map. I became dependant on Keolis' internal map, but I
-                lost access to it after my co-op ended and thus I made it to
-                satisfy myself.
+                time on a map. I became dependant on Keolis' internal map for my
+                commute, but I lost access to it after my co-op ended and thus I
+                made it to satisfy myself.
               </li>
               <li>
-                Uses requests, pandas and SQLAlchemy (python) to generate and
-                insert both static and real-time data into a SQLite database
+                Uses requests, pandas and SQLAlchemy (Python) to generate and
+                insert both static and real-time data into a SQLite database.
               </li>
               <li>
-                Renders with leaflet, a JavaScript library for interactive maps
-                and has some html and css to style it
+                The data is sent using Flask (Python), and rendered with
+                leaflet, a JavaScript library for interactive maps and has some
+                html and css to style it.
               </li>
               <li>
                 There's a preview of the map below for the commuter rail, but
@@ -265,8 +283,8 @@
             </span>
             <ul>
               <li>
-                I lost my database and way overcomplicated its recreation, but
-                it's easy to update and regenerate.
+                I lost my database and overcomplicated its recreation, but it's
+                easy to update and regenerate.
               </li>
               <li>
                 Uses SQLAlchemy and pandas (python) to generate the database
@@ -347,8 +365,8 @@
             <ul>
               <li>
                 I'm too lazy to write the tutoring message every day, so I spent
-                four hours writing and deploying this stupid bot with Docker and
-                Azure to save me five minutes of time every day.
+                four hours writing and deploying this bot with Docker and Azure
+                to save me five minutes of time every day.
               </li>
               <li>
                 Uses a Microsoft Teams webhook and python to automate the
@@ -422,7 +440,7 @@
                   onmouseover="hoverImage('globe-2')"
                   onmouseleave="unhoverImage('globe-2')"
                 >
-                  <span class="tooltiptext">View the site!</span
+                  <span class="tooltiptext">View the "site"!</span
                   ><img
                     id="globe-2"
                     src="src/img/globe.png"
@@ -446,8 +464,8 @@
               </li>
               <li>
                 I just put it here to show how far I've come since this taking
-                this course. I would never organize a directory like this, nor
-                would I use pure sqlite in python; I would use SQLAlchemy.
+                this course. I would never create create something this messy
+                now.
               </li>
             </ul>
           </span>
@@ -566,16 +584,16 @@
             />
           </span>
         </span>
-        <!-- 
+
         <span
           class="span_img"
-          onclick="openDrawer('6')"
+          onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
           onmouseover="hoverDrawer('6')"
           onmouseleave="unhoverDrawer('6')"
           id="col-1-6"
         >
           <img
-            src="src/img/startrucks.png"
+            src="src/img/coe.png"
             height="50"
             width="50"
             class="image"
@@ -583,17 +601,17 @@
           />
         </span>
         <span
-          onclick="openDrawer('6')"
+          onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
           onmouseover="hoverDrawer('6')"
           onmouseleave="unhoverDrawer('6')"
           id="col-2-6"
         >
-          <h2>Crazy Hoops</h2>
+          <h2>Crazy Baskets</h2>
           <h4>GE1502 Final Project</h4>
         </span>
         <span
           class="span_img"
-          onclick="openDrawer('6')"
+          onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
           onmouseover="hoverDrawer('6')"
           onmouseleave="unhoverDrawer('6')"
           id="col-3-6"
@@ -612,36 +630,36 @@
           <span>
             <span class="contact-grid">
               <a
-                href="https://docs.google.com/document/d/1S8s8DrhG35P3l1uizph_Plc6JiZnZSe4/edit?usp=sharing&ouid=111815965865952679739&rtpof=true&sd=true"
+                href="https://www.youtube.com/watch?v=xmlxNxxAq7Y"
                 target="_blank"
                 class="link_img"
                 ><span
                   class="tooltip"
-                  onmouseover="hoverImage('word-1')"
-                  onmouseleave="unhoverImage('word-1')"
+                  onmouseover="hoverImage('youtube-1')"
+                  onmouseleave="unhoverImage('youtube-1')"
                 >
-                  <span class="tooltiptext"
-                    >View the report (formatting was corrupted)!</span
+                  <span class="tooltiptext">If the iFrame doesn't work.</span
                   ><img
-                    id="word-1"
-                    src="src/img/word.png"
+                    id="youtube-1"
+                    src="src/img/youtube.png"
                     class="image"
                     width="50"
                     title="Go to the site!"
                 /></span>
               </a>
+
               <a
-                href="https://docs.google.com/presentation/d/1nYvDKau7ufT_9a2q-3SS-Y8E5EvX0jLrVO2do6xl7wU/edit#slide=id.p"
+                href="https://docs.google.com/presentation/d/13xmoiRTx9bpMINXsT2KmtCNBbbKl1s6YmDjlVTPX8eo/edit?usp=sharing"
                 target="_blank"
                 class="link_img"
                 ><span
                   class="tooltip"
-                  onmouseover="hoverImage('powerpoint-1')"
-                  onmouseleave="unhoverImage('powerpoint-1')"
+                  onmouseover="hoverImage('powerpoint-2')"
+                  onmouseleave="unhoverImage('powerpoint-2')"
                 >
                   <span class="tooltiptext">View the powerpoint!</span
                   ><img
-                    id="powerpoint-1"
+                    id="powerpoint-2"
                     src="src/img/powerpoint.png"
                     class="image"
                     width="50"
@@ -651,35 +669,25 @@
             </span>
             <ul>
               <li>
-                Led a group of 5 students to optimize the Starbucks at
-                Northeastern's layout, notorious for its long wait times.
+                Created a basketball-like carnival game for a demonstration at
+                the first year engineering spring expo.
               </li>
               <li>
-                I delivered the diagrams, the math, some data collection, the
-                report and the powerpoint.
-              </li>
-              <li>
-                I learned both about layout improvement techniques, autocad, and
-                leadership, particually under a time crunch scenario.
-              </li>
-              <li>
-                The document's formatting is messed up for some reason.
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1womXQcGZeLwTjsqa4IEgqrTh-kv5qkdU/view?usp=sharing"
-                  >Here's</a
-                >
-                what was submitted.
+                I worked on reports and MATLAB (for analytics) and helped to
+                assemble the game.
               </li>
             </ul>
-            <img
-              src="src/img/startrucks_layout.png"
-              class="teams_sc"
-              alt="teams screenshot"
-              title="Improved layout."
-            />
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </span>
-        </span> -->
+        </span>
       </span>
     </div>
 

@@ -2,15 +2,12 @@ window.addEventListener("load", function () {
   typeWriter();
 });
 
-function openDrawer(
-  drawer_id,
-  interval = 250,
-  iframeSources = ["https://mbtamapper.com/commuter_rail/"]
-) {
+function openDrawer(drawer_id, interval = 250, iframeSources = "") {
   "Opens Drawer and edits carrot by Id";
   var drawer = document.getElementById("drawer-" + drawer_id);
   var carrot = document.getElementById("carrot-" + drawer_id);
   var iFrames = drawer.getElementsByTagName("iframe");
+  var iframeSources = iframeSources.split(",");
 
   if (drawer.style.display == "") {
     drawer.animate({ opacity: [1, 0] }, interval).onfinish = function () {
@@ -105,7 +102,7 @@ function typeWriter() {
     "'m a runner.",
     " ride trains.",
     "'m a biker.",
-    " listen to lots of music.",
+    // " listen to lots of music.",
     "'m a sailor.",
     " like SQL.",
     "'m a gamer.",

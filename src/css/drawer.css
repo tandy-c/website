@@ -41,6 +41,7 @@
   padding-left: 15px;
   cursor: auto;
   padding-right: 15px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .contact-grid {
@@ -55,7 +56,7 @@
   margin: 0px 0px;
 }
 .contact-grid.actual_grid {
-  margin: -35px 12px 10px 12px;
+  margin: -35px 12px 25px 12px;
   grid-template-columns: repeat(5, 50px);
   grid-template-rows: 50px;
   /* margin: 0px 0px 0px 0px; */

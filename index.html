@@ -51,775 +51,754 @@
     </div>
 
     <div class="main">
-      <h1 id="about">About Me</h1>
-      <h4 style="margin-bottom: 15px">
-        A 3rd year "Industrial Engineer" at Northeastern University.
-      </h4>
-      <hr />
-      <!-- <p>
-        I'm from Sharon, Massachusetts and I'm interested in data science and
-        the backend.
-      </p> -->
-      <p>
-        I grew up in Stoughton but I then moved to Sharon, Massachusetts. I was
-        surrounded with the outdoors in Sharon, and I enjoyed exploring the
-        woods with my dog and sailing in the lake, but I never minded a day
-        inside, gaming. Meanwhile, I developed academic interests in economics,
-        geography, STEM and history.
-      </p>
-      <p>
-        My music taste is all over the place, but I think that this song is
-        severely underrated.
-      </p>
-      <iframe
-        class="spotifyiFrame"
-        src="https://open.spotify.com/embed/track/0IsB9kYyUfWVxFP85bFAmX?utm_source=generator&theme=0"
-        width="120%"
-        height="100"
-        frameborder="0"
-        title="spotify"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <p>
-        I became an industrial engineer becuase it was a compromise between my
-        interests, and I didn't want to code. Then, I took database systems; it
-        turned out I really liked SQL and Python. I still lack the fundementals
-        of computer science, but if I get the opprotunity to learn them, I'll
-        get a lot better at programming.
-      </p>
-      <p>
-        Concurrently, I'm looking to have a real impact, internally or
-        externally. My first co-op gave me the opprotunity and I took it;
-        knowing what I've done and seeing it everyday satisfies and motivates me
-        to do even more.
-      </p>
-      <!-- <p>
-        My city has given me so much, yet it expects nothing in return. I've given back.
-      </p> -->
-    </div>
+      <span id="about">
+        <h1>About Me</h1>
+        <h4 style="margin-bottom: 15px">
+          A 3rd year "Industrial Engineer" at Northeastern University.
+        </h4>
+        <hr />
+        <!-- <p>
+          I'm from Sharon, Massachusetts and I'm interested in data science and
+          the backend.
+        </p> -->
+        <p>
+          I grew up in Stoughton but I then moved to Sharon, Massachusetts. I
+          was surrounded with the outdoors in Sharon, and I enjoyed exploring
+          the woods with my dog and sailing in the lake, but I never minded a
+          day inside, gaming. Meanwhile, I developed academic interests in
+          economics, geography, STEM and history.
+        </p>
+        <p>
+          My music taste is all over the place, but I think that this song is
+          severely underrated.
+        </p>
+        <iframe
+          class="spotifyiFrame"
+          src="https://open.spotify.com/embed/track/0IsB9kYyUfWVxFP85bFAmX?utm_source=generator&theme=0"
+          width="120%"
+          height="100"
+          frameborder="0"
+          title="spotify"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <p>
+          I became an industrial engineer becuase it was a compromise between my
+          interests, and I didn't want to code. Then, I took database systems;
+          it turned out I really liked SQL and Python. I still lack the
+          fundementals of computer science, but if I get the opprotunity to
+          learn them, I'll get a lot better at programming.
+        </p>
+        <p>
+          Concurrently, I'm looking to have a real impact, internally or
+          externally. My first co-op gave me the opprotunity and I took it;
+          knowing what I've done and seeing it everyday satisfies and motivates
+          me to do even more.
+        </p>
+        <!-- <p>
+          My city has given me so much, yet it expects nothing in return. I've given back.
+        </p> -->
+      </span>
 
-    <div class="main" id="projects">
-      <h1>Projects</h1>
-      <hr />
       <br />
-      <span class="container">
-        <span
-          class="span_img"
-          onclick="openDrawer('1', 250,'https://mbtamapper.com/commuter_rail/')"
-          onmouseover="hoverDrawer('1')"
-          onmouseleave="unhoverDrawer('1')"
-          id="col-1-1"
-        >
-          <img
-            src="src/img/MBTA.png"
-            height="50"
-            width="50"
-            class="image"
-            alt="T"
-          />
-        </span>
-        <span
-          onclick="openDrawer('1', 250, 'https://mbtamapper.com/commuter_rail/')"
-          onmouseover="hoverDrawer('1')"
-          onmouseleave="unhoverDrawer('1')"
-          id="col-2-1"
-        >
-          <h2>MBTA Mapper</h2>
-          <h4>Passion project</h4>
-        </span>
-        <span
-          class="span_img"
-          onclick="openDrawer('1', 250,'https://mbtamapper.com/commuter_rail/')"
-          onmouseover="hoverDrawer('1')"
-          onmouseleave="unhoverDrawer('1')"
-          id="col-3-1"
-        >
-          <img
-            src="src/img/carrot.png"
-            height="25"
-            width="25"
-            class="image"
-            alt="carrot"
-            id="carrot-1"
-          />
-        </span>
-        <!-- <span id="drawer-1" style="display: none;"></span> -->
-        <span id="drawer-1" class="drawer" style="display: none">
-          <h3>
-            Realtime MBTA mapping
-            <a href="https://mbtamapper.com" target="_blank" class="link_img"
-              >@mbtamapper.com</a
-            >.
-          </h3>
-          <span>
-            <span class="contact-grid">
-              <a
-                href="https://github.com/tandy-c/mbta_mapper"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('github-1')"
-                  onmouseleave="unhoverImage('github-1')"
-                >
-                  <span class="tooltiptext">View the repo!</span
-                  ><img
-                    id="github-1"
-                    src="src/img/github.png"
-                    class="image"
-                    width="50"
-                    alt="github"
-                /></span>
-              </a>
-              <a href="https://mbtamapper.com/" target="_blank" class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('globe-1')"
-                  onmouseleave="unhoverImage('globe-1')"
-                >
-                  <span class="tooltiptext">View the site!</span
-                  ><img
-                    id="globe-1"
-                    src="src/img/globe.png"
-                    class="image"
-                    alt="globe"
-                    width="50"
-                /></span> </a
-            ></span>
-            <ul>
-              <li>
-                There were really no websites (<a
-                  target="_blank"
-                  href="https://mbta.sites.fas.harvard.edu/T/commuter-rail-map.html"
-                  >this site</a
-                >
-                doesn't count because it's bad) that showed the MBTA in real
-                time on a map. I became dependant on Keolis' internal map for my
-                commute, but I lost access to it after my co-op ended and thus I
-                made it to satisfy myself.
-              </li>
-              <li>
-                Uses requests, pandas and SQLAlchemy (Python) to generate and
-                insert both static and real-time data into a SQLite database.
-              </li>
-              <li>
-                The data is sent using Flask (Python), and rendered with
-                leaflet, a JavaScript library for interactive maps and has some
-                html and css to style it.
-              </li>
-              <li>
-                There's a preview of the map below for the commuter rail, but
-                there are other routes available
-                <a target="_blank" href="https://mbtamapper.com/">here</a>!
-              </li>
-            </ul>
 
-            <iframe
-              data-src="https://mbtamapper.com/commuter_rail/"
-              title="commuter rail map"
-            >
-            </iframe>
-            <br
-          /></span>
-        </span>
-
-        <span
-          class="span_img"
-          onclick="openDrawer('2')"
-          onmouseover="hoverDrawer('2')"
-          onmouseleave="unhoverDrawer('2')"
-          id="col-1-2"
-        >
-          <img
-            src="src/img/sqlalchemy.png"
-            height="50"
-            width="50"
-            alt="sqlalchemy"
-            class="image"
-          />
-        </span>
-        <span
-          onclick="openDrawer('2')"
-          onmouseover="hoverDrawer('2')"
-          onmouseleave="unhoverDrawer('2')"
-          id="col-2-2"
-        >
-          <h2>IE3425 Database Generator</h2>
-          <h4>Personal/IE3425 Course Assistant Grader</h4>
-        </span>
-        <span
-          class="span_img"
-          onclick="openDrawer('2')"
-          onmouseover="hoverDrawer('2')"
-          onmouseleave="unhoverDrawer('2')"
-          id="col-3-2"
-        >
-          <img
-            src="src/img/carrot.png"
-            height="25"
-            width="25"
-            class="image"
-            alt="carrot"
-            id="carrot-2"
-          />
-        </span>
-        <!-- <span id="drawer-1" style="display: none;"></span> -->
-        <span id="drawer-2" class="drawer" style="display: none">
-          <h3>Overcomplication at its finest</h3>
-          <span>
-            <span class="contact-grid">
-              <a
-                href="https://github.com/tandy-c/NEU-IE3425"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('github-2')"
-                  onmouseleave="unhoverImage('github-2')"
-                >
-                  <span class="tooltiptext">View the repo!</span>
-                  <img
-                    id="github-2"
-                    src="src/img/github.png"
-                    class="image"
-                    width="50"
-                    alt="github"
-                /></span>
-              </a>
-            </span>
-            <ul>
-              <li>
-                I lost my database and overcomplicated its recreation, but it's
-                easy to update and regenerate.
-              </li>
-              <li>
-                Uses SQLAlchemy and pandas (python) to generate the database
-                normally hand-created by students by reading an excel file
-              </li>
-              <li>
-                I might use this repository for further tutoring and might add
-                more scripts related to the class
-              </li>
-            </ul>
-          </span>
-        </span>
-
-        <span
-          class="span_img"
-          onclick="openDrawer('3')"
-          onmouseover="hoverDrawer('3')"
-          onmouseleave="unhoverDrawer('3')"
-          id="col-1-3"
-        >
-          <img
-            src="src/img/msteams.png"
-            height="50"
-            width="50"
-            class="image"
-            alt="teams"
-          />
-        </span>
-        <span
-          onclick="openDrawer('3')"
-          onmouseover="hoverDrawer('3')"
-          onmouseleave="unhoverDrawer('3')"
-          id="col-2-3"
-        >
-          <h2>Microsoft Teams Bot</h2>
-          <h4>Personal/IE3425 Tutorer</h4>
-        </span>
-        <span
-          class="span_img"
-          onclick="openDrawer('3')"
-          onmouseover="hoverDrawer('3')"
-          onmouseleave="unhoverDrawer('3')"
-          id="col-3-3"
-        >
-          <img
-            src="src/img/carrot.png"
-            height="25"
-            width="25"
-            class="image"
-            alt="carrot"
-            id="carrot-3"
-          />
-        </span>
-        <span id="drawer-3" class="drawer" style="display: none">
-          <h3>My laziness knows no bounds</h3>
-          <span>
-            <span class="contact-grid">
-              <a
-                href="https://github.com/tandy-c/msteamsbot"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('github-4')"
-                  onmouseleave="unhoverImage('github-4')"
-                >
-                  <span class="tooltiptext">View the repo!</span
-                  ><img
-                    id="github-4"
-                    src="src/img/github.png"
-                    class="image"
-                    width="50"
-                    title="View the repository here"
-                    alt="github"
-                /></span>
-              </a>
-            </span>
-            <ul>
-              <li>
-                I'm too lazy to write the tutoring message every day, so I spent
-                four hours writing and deploying this bot with Docker and Azure
-                to save me five minutes of time every day.
-              </li>
-              <li>
-                Uses a Microsoft Teams webhook and python to automate the
-                tutoring message sent to students
-              </li>
-              <li>Was it worth it? Of course it was!</li>
-            </ul>
+      <span id="projects"
+        ><h1>Projects</h1>
+        <hr />
+        <br />
+        <span class="container">
+          <span
+            class="span_img"
+            onclick="openDrawer('1', 250,'https://mbtamapper.com/commuter_rail/')"
+            onmouseover="hoverDrawer('1')"
+            onmouseleave="unhoverDrawer('1')"
+            id="col-1-1"
+          >
             <img
-              src="src/img/teams_sc.png"
-              class="teams_sc"
-              alt="teams screenshot"
+              src="src/img/MBTA.png"
+              height="50"
+              width="50"
+              class="image"
+              alt="T"
             />
           </span>
-        </span>
-      </span>
-    </div>
-    <div class="main">
-      <h1>School Projects</h1>
-      <hr />
-      <span class="container">
-        <span
-          class="span_img"
-          onclick="openDrawer('4')"
-          onmouseover="hoverDrawer('4')"
-          onmouseleave="unhoverDrawer('4')"
-          id="col-1-4"
-        >
-          <img
-            src="src/img/tf2.png"
-            height="50"
-            width="50"
-            class="image"
-            alt="teamfortress"
-          />
-        </span>
-        <span
-          onclick="openDrawer('4')"
-          onmouseover="hoverDrawer('4')"
-          onmouseleave="unhoverDrawer('4')"
-          id="col-2-4"
-        >
-          <h2>Team Fortress 2 Website</h2>
-          <h4>IE3425 Final Project</h4>
-        </span>
-        <span
-          class="span_img"
-          onclick="openDrawer('4')"
-          onmouseover="hoverDrawer('4')"
-          onmouseleave="unhoverDrawer('4')"
-          id="col-3-4"
-        >
-          <img
-            src="src/img/carrot.png"
-            height="25"
-            width="25"
-            class="image"
-            alt="carrot"
-            id="carrot-4"
-          />
-        </span>
-        <span id="drawer-4" class="drawer" style="display: none">
-          <h3>A website for competitive tf2.</h3>
-          <span>
-            <span class="contact-grid">
-              <a
-                href="https://www1.coe.neu.edu/~johancho/project/"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('globe-2')"
-                  onmouseleave="unhoverImage('globe-2')"
-                >
-                  <span class="tooltiptext">View the "site"!</span
-                  ><img
-                    id="globe-2"
-                    src="src/img/globe.png"
-                    class="image"
-                    width="50"
-                    alt="globe"
-                /></span>
-              </a>
-            </span>
-            <ul>
-              <li>
-                This project was supposed to combine a front, middle and backend
-                to create a workable website of our own violation. In my case,
-                the user of the website would've queried the database for
-                information on compeitive team fortress 2 players.
-              </li>
-              <li>
-                We ran out of time towards the end of the semester, so there was
-                no interconnectivity between the front and backend.
-              </li>
-              <li>
-                I just put it here to show how far I've come since this taking
-                this course. I would never create create something this messy
-                now.
-              </li>
-            </ul>
+          <span
+            onclick="openDrawer('1', 250, 'https://mbtamapper.com/commuter_rail/')"
+            onmouseover="hoverDrawer('1')"
+            onmouseleave="unhoverDrawer('1')"
+            id="col-2-1"
+          >
+            <h2>MBTA Mapper</h2>
+            <h4>Passion project</h4>
           </span>
-        </span>
-
-        <span
-          class="span_img"
-          onclick="openDrawer('5')"
-          onmouseover="hoverDrawer('5')"
-          onmouseleave="unhoverDrawer('5')"
-          id="col-1-5"
-        >
-          <img
-            src="src/img/startrucks.png"
-            height="50"
-            width="50"
-            class="image"
-            alt="teams"
-          />
-        </span>
-        <span
-          onclick="openDrawer('5')"
-          onmouseover="hoverDrawer('5')"
-          onmouseleave="unhoverDrawer('5')"
-          id="col-2-5"
-        >
-          <h2>Starbucks Layout Improvement</h2>
-          <h4>IE2310 Final Project</h4>
-        </span>
-        <span
-          class="span_img"
-          onclick="openDrawer('5')"
-          onmouseover="hoverDrawer('5')"
-          onmouseleave="unhoverDrawer('5')"
-          id="col-3-5"
-        >
-          <img
-            src="src/img/carrot.png"
-            height="25"
-            width="25"
-            class="image"
-            alt="carrot"
-            id="carrot-5"
-          />
-        </span>
-        <span id="drawer-5" class="drawer" style="display: none">
-          <h3>Optimizated NEU starbucks layout.</h3>
-          <span>
-            <span class="contact-grid">
-              <a
-                href="https://docs.google.com/document/d/1S8s8DrhG35P3l1uizph_Plc6JiZnZSe4/edit?usp=sharing&ouid=111815965865952679739&rtpof=true&sd=true"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('word-1')"
-                  onmouseleave="unhoverImage('word-1')"
-                >
-                  <span class="tooltiptext"
-                    >View the report (formatting was corrupted)!</span
-                  ><img
-                    id="word-1"
-                    src="src/img/word.png"
-                    class="image"
-                    width="50"
-                /></span>
-              </a>
-              <a
-                href="https://docs.google.com/presentation/d/1nYvDKau7ufT_9a2q-3SS-Y8E5EvX0jLrVO2do6xl7wU/edit#slide=id.p"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('powerpoint-1')"
-                  onmouseleave="unhoverImage('powerpoint-1')"
-                >
-                  <span class="tooltiptext">View the powerpoint!</span
-                  ><img
-                    id="powerpoint-1"
-                    src="src/img/powerpoint.png"
-                    class="image"
-                    width="50"
-                /></span>
-              </a>
-            </span>
-            <ul>
-              <li>
-                Led a group of 5 students to optimize the Starbucks at
-                Northeastern's layout, notorious for its long wait times.
-              </li>
-              <li>
-                I delivered the diagrams, the math, some data collection, the
-                report and the powerpoint.
-              </li>
-              <li>
-                I learned both about layout improvement techniques, autocad, and
-                leadership, particually under a time crunch scenario.
-              </li>
-              <li>
-                The document's formatting is messed up for some reason.
+          <span
+            class="span_img"
+            onclick="openDrawer('1', 250,'https://mbtamapper.com/commuter_rail/')"
+            onmouseover="hoverDrawer('1')"
+            onmouseleave="unhoverDrawer('1')"
+            id="col-3-1"
+          >
+            <img
+              src="src/img/carrot.png"
+              height="25"
+              width="25"
+              class="image"
+              alt="carrot"
+              id="carrot-1"
+            />
+          </span>
+          <!-- <span id="drawer-1" style="display: none;"></span> -->
+          <span id="drawer-1" class="drawer" style="display: none">
+            <h3>
+              Realtime MBTA mapping
+              <a href="https://mbtamapper.com" target="_blank" class="link_img"
+                >@mbtamapper.com</a
+              >.
+            </h3>
+            <span>
+              <span class="contact-grid">
                 <a
+                  href="https://github.com/tandy-c/mbta_mapper"
                   target="_blank"
-                  href="https://drive.google.com/file/d/1womXQcGZeLwTjsqa4IEgqrTh-kv5qkdU/view?usp=sharing"
-                  >Here's</a
-                >
-                what was submitted.
-              </li>
-            </ul>
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('github-1')"
+                    onmouseleave="unhoverImage('github-1')"
+                  >
+                    <span class="tooltiptext">View the repo!</span
+                    ><img
+                      id="github-1"
+                      src="src/img/github.png"
+                      class="image"
+                      width="50"
+                      alt="github"
+                  /></span>
+                </a>
+                <a
+                  href="https://mbtamapper.com/"
+                  target="_blank"
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('globe-1')"
+                    onmouseleave="unhoverImage('globe-1')"
+                  >
+                    <span class="tooltiptext">View the site!</span
+                    ><img
+                      id="globe-1"
+                      src="src/img/globe.png"
+                      class="image"
+                      alt="globe"
+                      width="50"
+                  /></span> </a
+              ></span>
+              <ul>
+                <li>
+                  There were really no websites (<a
+                    target="_blank"
+                    href="https://mbta.sites.fas.harvard.edu/T/commuter-rail-map.html"
+                    >this site</a
+                  >
+                  doesn't count because it's bad) that showed the MBTA in real
+                  time on a map. I became dependant on Keolis' internal map for
+                  my commute, but I lost access to it after my co-op ended and
+                  thus I made it to satisfy myself.
+                </li>
+                <li>
+                  Uses requests, pandas and SQLAlchemy (Python) to generate and
+                  insert both static and real-time data into a SQLite database.
+                </li>
+                <li>
+                  The data is sent using Flask (Python), and rendered with
+                  leaflet, a JavaScript library for interactive maps and has
+                  some html and css to style it.
+                </li>
+                <li>
+                  There's a preview of the map below for the commuter rail, but
+                  there are other routes available
+                  <a target="_blank" href="https://mbtamapper.com/">here</a>!
+                </li>
+              </ul>
+
+              <iframe
+                data-src="https://mbtamapper.com/commuter_rail/"
+                title="commuter rail map"
+              >
+              </iframe>
+              <br
+            /></span>
+          </span>
+
+          <span
+            class="span_img"
+            onclick="openDrawer('2')"
+            onmouseover="hoverDrawer('2')"
+            onmouseleave="unhoverDrawer('2')"
+            id="col-1-2"
+          >
             <img
-              src="src/img/startrucks_layout.png"
-              class="teams_sc"
-              alt="teams screenshot"
+              src="src/img/sqlalchemy.png"
+              height="50"
+              width="50"
+              alt="sqlalchemy"
+              class="image"
             />
           </span>
-        </span>
-
-        <span
-          class="span_img"
-          onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
-          onmouseover="hoverDrawer('6')"
-          onmouseleave="unhoverDrawer('6')"
-          id="col-1-6"
-        >
-          <img
-            src="src/img/coe.png"
-            height="50"
-            width="50"
-            class="image"
-            alt="teams"
-          />
-        </span>
-        <span
-          onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
-          onmouseover="hoverDrawer('6')"
-          onmouseleave="unhoverDrawer('6')"
-          id="col-2-6"
-        >
-          <h2>Crazy Baskets</h2>
-          <h4>GE1502 Final Project</h4>
-        </span>
-        <span
-          class="span_img"
-          onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
-          onmouseover="hoverDrawer('6')"
-          onmouseleave="unhoverDrawer('6')"
-          id="col-3-6"
-        >
-          <img
-            src="src/img/carrot.png"
-            height="25"
-            width="25"
-            class="image"
-            alt="carrot"
-            id="carrot-6"
-          />
-        </span>
-        <span id="drawer-6" class="drawer" style="display: none">
-          <h3>A basketball-like carnival game.</h3>
-          <span>
-            <span class="contact-grid">
-              <a
-                href="https://www.youtube.com/watch?v=xmlxNxxAq7Y"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('youtube-1')"
-                  onmouseleave="unhoverImage('youtube-1')"
-                >
-                  <span class="tooltiptext">If the iFrame doesn't work.</span
-                  ><img
-                    id="youtube-1"
-                    src="src/img/youtube.png"
-                    class="image"
-                    width="50"
-                /></span>
-              </a>
-
-              <a
-                href="https://docs.google.com/presentation/d/13xmoiRTx9bpMINXsT2KmtCNBbbKl1s6YmDjlVTPX8eo/edit?usp=sharing"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('powerpoint-2')"
-                  onmouseleave="unhoverImage('powerpoint-2')"
-                >
-                  <span class="tooltiptext">View the powerpoint!</span
-                  ><img
-                    id="powerpoint-2"
-                    src="src/img/powerpoint.png"
-                    class="image"
-                    width="50"
-                /></span>
-              </a>
+          <span
+            onclick="openDrawer('2')"
+            onmouseover="hoverDrawer('2')"
+            onmouseleave="unhoverDrawer('2')"
+            id="col-2-2"
+          >
+            <h2>IE3425 Database Generator</h2>
+            <h4>Personal/IE3425 Course Assistant Grader</h4>
+          </span>
+          <span
+            class="span_img"
+            onclick="openDrawer('2')"
+            onmouseover="hoverDrawer('2')"
+            onmouseleave="unhoverDrawer('2')"
+            id="col-3-2"
+          >
+            <img
+              src="src/img/carrot.png"
+              height="25"
+              width="25"
+              class="image"
+              alt="carrot"
+              id="carrot-2"
+            />
+          </span>
+          <!-- <span id="drawer-1" style="display: none;"></span> -->
+          <span id="drawer-2" class="drawer" style="display: none">
+            <h3>Overcomplication at its finest</h3>
+            <span>
+              <span class="contact-grid">
+                <a
+                  href="https://github.com/tandy-c/NEU-IE3425"
+                  target="_blank"
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('github-2')"
+                    onmouseleave="unhoverImage('github-2')"
+                  >
+                    <span class="tooltiptext">View the repo!</span>
+                    <img
+                      id="github-2"
+                      src="src/img/github.png"
+                      class="image"
+                      width="50"
+                      alt="github"
+                  /></span>
+                </a>
+              </span>
+              <ul>
+                <li>
+                  I lost my database and overcomplicated its recreation, but
+                  it's easy to update and regenerate.
+                </li>
+                <li>
+                  Uses SQLAlchemy and pandas (python) to generate the database
+                  normally hand-created by students by reading an excel file
+                </li>
+                <li>
+                  I might use this repository for further tutoring and might add
+                  more scripts related to the class
+                </li>
+              </ul>
             </span>
-            <ul>
-              <li>
-                Created a basketball-like carnival game for a demonstration at
-                the first year engineering spring expo.
-              </li>
-              <li>
-                I worked on reports and MATLAB (for analytics) and helped to
-                assemble the game.
-              </li>
-            </ul>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+          </span>
+
+          <span
+            class="span_img"
+            onclick="openDrawer('3')"
+            onmouseover="hoverDrawer('3')"
+            onmouseleave="unhoverDrawer('3')"
+            id="col-1-3"
+          >
+            <img
+              src="src/img/msteams.png"
+              height="50"
+              width="50"
+              class="image"
+              alt="teams"
+            />
+          </span>
+          <span
+            onclick="openDrawer('3')"
+            onmouseover="hoverDrawer('3')"
+            onmouseleave="unhoverDrawer('3')"
+            id="col-2-3"
+          >
+            <h2>Microsoft Teams Bot</h2>
+            <h4>Personal/IE3425 Tutorer</h4>
+          </span>
+          <span
+            class="span_img"
+            onclick="openDrawer('3')"
+            onmouseover="hoverDrawer('3')"
+            onmouseleave="unhoverDrawer('3')"
+            id="col-3-3"
+          >
+            <img
+              src="src/img/carrot.png"
+              height="25"
+              width="25"
+              class="image"
+              alt="carrot"
+              id="carrot-3"
+            />
+          </span>
+          <span id="drawer-3" class="drawer" style="display: none">
+            <h3>My laziness knows no bounds</h3>
+            <span>
+              <span class="contact-grid">
+                <a
+                  href="https://github.com/tandy-c/msteamsbot"
+                  target="_blank"
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('github-4')"
+                    onmouseleave="unhoverImage('github-4')"
+                  >
+                    <span class="tooltiptext">View the repo!</span
+                    ><img
+                      id="github-4"
+                      src="src/img/github.png"
+                      class="image"
+                      width="50"
+                      title="View the repository here"
+                      alt="github"
+                  /></span>
+                </a>
+              </span>
+              <ul>
+                <li>
+                  I'm too lazy to write the tutoring message every day, so I
+                  spent four hours writing and deploying this bot with Docker
+                  and Azure to save me five minutes of time every day.
+                </li>
+                <li>
+                  Uses a Microsoft Teams webhook and python to automate the
+                  tutoring message sent to students
+                </li>
+                <li>Was it worth it? Of course it was!</li>
+              </ul>
+              <img
+                src="src/img/teams_sc.png"
+                class="teams_sc"
+                alt="teams screenshot"
+              />
+            </span>
           </span>
         </span>
       </span>
-    </div>
 
-    <div class="main" id="contact">
-      <h1>Contact</h1>
+      <br />
 
-      <hr />
-      <br />
-      <br />
-      <span class="contact-grid actual_grid">
-        <a href="mailto:cho.joh@northeastern.edu" target="_blank"
-          ><span
-            class="tooltip"
-            onmouseover="hoverImage('email')"
-            onmouseleave="unhoverImage('email')"
+      <span id="schoolProjects">
+        <h1>School Projects</h1>
+        <hr />
+        <br />
+        <span class="container">
+          <span
+            class="span_img"
+            onclick="openDrawer('4')"
+            onmouseover="hoverDrawer('4')"
+            onmouseleave="unhoverDrawer('4')"
+            id="col-1-4"
           >
-            <span class="tooltiptext">My school email</span
-            ><img
-              id="email"
-              src="src/img/email.png"
-              class="image"
+            <img
+              src="src/img/tf2.png"
+              height="50"
               width="50"
-              alt="email"
-          /></span>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/johan-cho-38892b1b1/"
-          target="_blank"
-          ><span
-            class="tooltip"
-            onmouseover="hoverImage('linkedin')"
-            onmouseleave="unhoverImage('linkedin')"
-          >
-            <span class="tooltiptext">My linkedin</span
-            ><img
-              id="linkedin"
-              src="src/img/linkedin.png"
               class="image"
-              width="50"
-              alt="linkedin"
-          /></span>
-        </a>
-        <a href="https://github.com/tandy-c" target="_blank"
-          ><span
-            class="tooltip"
-            onmouseover="hoverImage('github')"
-            onmouseleave="unhoverImage('github')"
-          >
-            <span class="tooltiptext">My github</span
-            ><img
-              id="github"
-              src="src/img/github.png"
-              class="image"
-              width="50"
-              alt="github"
-          /></span> </a
-        ><a href="https://www.facebook.com/johan.cho.927" target="_blank"
-          ><span
-            class="tooltip"
-            onmouseover="hoverImage('facebook')"
-            onmouseleave="unhoverImage('facebook')"
-          >
-            <span class="tooltiptext">My facebook</span
-            ><img
-              id="facebook"
-              src="src/img/facebook.png"
-              class="image"
-              width="50"
-              alt="facebook"
-          /></span> </a
-        ><a
-          href="https://www.youtube.com/channel/UCP91LPgRFY03YoIGrmuMH9A"
-          target="_blank"
-          ><span
-            class="tooltip"
-            onmouseover="hoverImage('youtube')"
-            onmouseleave="unhoverImage('youtube')"
-          >
-            <span class="tooltiptext"
-              >My youtube (haven't uploaded in a long time)</span
-            ><img
-              id="youtube"
-              src="src/img/youtube.png"
-              class="image"
-              width="50"
-              alt="youtube"
+              alt="teamfortress"
             />
           </span>
-        </a>
+          <span
+            onclick="openDrawer('4')"
+            onmouseover="hoverDrawer('4')"
+            onmouseleave="unhoverDrawer('4')"
+            id="col-2-4"
+          >
+            <h2>Team Fortress 2 Website</h2>
+            <h4>IE3425 Final Project</h4>
+          </span>
+          <span
+            class="span_img"
+            onclick="openDrawer('4')"
+            onmouseover="hoverDrawer('4')"
+            onmouseleave="unhoverDrawer('4')"
+            id="col-3-4"
+          >
+            <img
+              src="src/img/carrot.png"
+              height="25"
+              width="25"
+              class="image"
+              alt="carrot"
+              id="carrot-4"
+            />
+          </span>
+          <span id="drawer-4" class="drawer" style="display: none">
+            <h3>A website for competitive tf2.</h3>
+            <span>
+              <span class="contact-grid">
+                <a
+                  href="https://www1.coe.neu.edu/~johancho/project/"
+                  target="_blank"
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('globe-2')"
+                    onmouseleave="unhoverImage('globe-2')"
+                  >
+                    <span class="tooltiptext">View the "site"!</span
+                    ><img
+                      id="globe-2"
+                      src="src/img/globe.png"
+                      class="image"
+                      width="50"
+                      alt="globe"
+                  /></span>
+                </a>
+              </span>
+              <ul>
+                <li>
+                  This project was supposed to combine a front, middle and
+                  backend to create a workable website of our own violation. In
+                  my case, the user of the website would've queried the database
+                  for information on compeitive team fortress 2 players.
+                </li>
+                <li>
+                  We ran out of time towards the end of the semester, so there
+                  was no interconnectivity between the front and backend.
+                </li>
+                <li>
+                  I just put it here to show how far I've come since this taking
+                  this course. I would never create create something this messy
+                  now.
+                </li>
+              </ul>
+            </span>
+          </span>
+
+          <span
+            class="span_img"
+            onclick="openDrawer('5')"
+            onmouseover="hoverDrawer('5')"
+            onmouseleave="unhoverDrawer('5')"
+            id="col-1-5"
+          >
+            <img
+              src="src/img/startrucks.png"
+              height="50"
+              width="50"
+              class="image"
+              alt="teams"
+            />
+          </span>
+          <span
+            onclick="openDrawer('5')"
+            onmouseover="hoverDrawer('5')"
+            onmouseleave="unhoverDrawer('5')"
+            id="col-2-5"
+          >
+            <h2>Starbucks Layout Improvement</h2>
+            <h4>IE2310 Final Project</h4>
+          </span>
+          <span
+            class="span_img"
+            onclick="openDrawer('5')"
+            onmouseover="hoverDrawer('5')"
+            onmouseleave="unhoverDrawer('5')"
+            id="col-3-5"
+          >
+            <img
+              src="src/img/carrot.png"
+              height="25"
+              width="25"
+              class="image"
+              alt="carrot"
+              id="carrot-5"
+            />
+          </span>
+          <span id="drawer-5" class="drawer" style="display: none">
+            <h3>Optimizated NEU starbucks layout.</h3>
+            <span>
+              <span class="contact-grid">
+                <a
+                  href="https://docs.google.com/document/d/1S8s8DrhG35P3l1uizph_Plc6JiZnZSe4/edit?usp=sharing&ouid=111815965865952679739&rtpof=true&sd=true"
+                  target="_blank"
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('word-1')"
+                    onmouseleave="unhoverImage('word-1')"
+                  >
+                    <span class="tooltiptext"
+                      >View the report (formatting was corrupted)!</span
+                    ><img
+                      id="word-1"
+                      src="src/img/word.png"
+                      class="image"
+                      width="50"
+                  /></span>
+                </a>
+                <a
+                  href="https://docs.google.com/presentation/d/1nYvDKau7ufT_9a2q-3SS-Y8E5EvX0jLrVO2do6xl7wU/edit#slide=id.p"
+                  target="_blank"
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('powerpoint-1')"
+                    onmouseleave="unhoverImage('powerpoint-1')"
+                  >
+                    <span class="tooltiptext">View the powerpoint!</span
+                    ><img
+                      id="powerpoint-1"
+                      src="src/img/powerpoint.png"
+                      class="image"
+                      width="50"
+                  /></span>
+                </a>
+              </span>
+              <ul>
+                <li>
+                  Led a group of 5 students to optimize the Starbucks at
+                  Northeastern's layout, notorious for its long wait times.
+                </li>
+                <li>
+                  I delivered the diagrams, the math, some data collection, the
+                  report and the powerpoint.
+                </li>
+                <li>
+                  I learned both about layout improvement techniques, autocad,
+                  and leadership, particually under a time crunch scenario.
+                </li>
+                <li>
+                  The document's formatting is messed up for some reason.
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1womXQcGZeLwTjsqa4IEgqrTh-kv5qkdU/view?usp=sharing"
+                    >Here's</a
+                  >
+                  what was submitted.
+                </li>
+              </ul>
+              <img
+                src="src/img/startrucks_layout.png"
+                class="teams_sc"
+                alt="teams screenshot"
+              />
+            </span>
+          </span>
+
+          <span
+            class="span_img"
+            onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
+            onmouseover="hoverDrawer('6')"
+            onmouseleave="unhoverDrawer('6')"
+            id="col-1-6"
+          >
+            <img
+              src="src/img/coe.png"
+              height="50"
+              width="50"
+              class="image"
+              alt="teams"
+            />
+          </span>
+          <span
+            onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
+            onmouseover="hoverDrawer('6')"
+            onmouseleave="unhoverDrawer('6')"
+            id="col-2-6"
+          >
+            <h2>Crazy Baskets</h2>
+            <h4>GE1502 Final Project</h4>
+          </span>
+          <span
+            class="span_img"
+            onclick="openDrawer('6', 250, 'https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF')"
+            onmouseover="hoverDrawer('6')"
+            onmouseleave="unhoverDrawer('6')"
+            id="col-3-6"
+          >
+            <img
+              src="src/img/carrot.png"
+              height="25"
+              width="25"
+              class="image"
+              alt="carrot"
+              id="carrot-6"
+            />
+          </span>
+          <span id="drawer-6" class="drawer" style="display: none">
+            <h3>A basketball-like carnival game.</h3>
+            <span>
+              <span class="contact-grid">
+                <a
+                  href="https://www.youtube.com/watch?v=xmlxNxxAq7Y"
+                  target="_blank"
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('youtube-1')"
+                    onmouseleave="unhoverImage('youtube-1')"
+                  >
+                    <span class="tooltiptext">If the iFrame doesn't work.</span
+                    ><img
+                      id="youtube-1"
+                      src="src/img/youtube.png"
+                      class="image"
+                      width="50"
+                  /></span>
+                </a>
+
+                <a
+                  href="https://docs.google.com/presentation/d/13xmoiRTx9bpMINXsT2KmtCNBbbKl1s6YmDjlVTPX8eo/edit?usp=sharing"
+                  target="_blank"
+                  class="link_img"
+                  ><span
+                    class="tooltip"
+                    onmouseover="hoverImage('powerpoint-2')"
+                    onmouseleave="unhoverImage('powerpoint-2')"
+                  >
+                    <span class="tooltiptext">View the powerpoint!</span
+                    ><img
+                      id="powerpoint-2"
+                      src="src/img/powerpoint.png"
+                      class="image"
+                      width="50"
+                  /></span>
+                </a>
+              </span>
+              <ul>
+                <li>
+                  Created a basketball-like carnival game for a demonstration at
+                  the first year engineering spring expo.
+                </li>
+                <li>
+                  I worked on reports and MATLAB (for analytics) and helped to
+                  assemble the game.
+                </li>
+              </ul>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/xmlxNxxAq7Y?si=HikinrF17RENhFqF"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </span>
+          </span>
+        </span>
       </span>
+
+      <br />
+
+      <span id="contact"
+        ><h1>Contact</h1>
+
+        <hr />
+        <br />
+        <br />
+        <span class="contact-grid actual_grid">
+          <a href="mailto:cho.joh@northeastern.edu" target="_blank"
+            ><span
+              class="tooltip"
+              onmouseover="hoverImage('email')"
+              onmouseleave="unhoverImage('email')"
+            >
+              <span class="tooltiptext">My school email</span
+              ><img
+                id="email"
+                src="src/img/email.png"
+                class="image"
+                width="50"
+                alt="email"
+            /></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/johan-cho-38892b1b1/"
+            target="_blank"
+            ><span
+              class="tooltip"
+              onmouseover="hoverImage('linkedin')"
+              onmouseleave="unhoverImage('linkedin')"
+            >
+              <span class="tooltiptext">My linkedin</span
+              ><img
+                id="linkedin"
+                src="src/img/linkedin.png"
+                class="image"
+                width="50"
+                alt="linkedin"
+            /></span>
+          </a>
+          <a href="https://github.com/tandy-c" target="_blank"
+            ><span
+              class="tooltip"
+              onmouseover="hoverImage('github')"
+              onmouseleave="unhoverImage('github')"
+            >
+              <span class="tooltiptext">My github</span
+              ><img
+                id="github"
+                src="src/img/github.png"
+                class="image"
+                width="50"
+                alt="github"
+            /></span> </a
+          ><a href="https://www.facebook.com/johan.cho.927" target="_blank"
+            ><span
+              class="tooltip"
+              onmouseover="hoverImage('facebook')"
+              onmouseleave="unhoverImage('facebook')"
+            >
+              <span class="tooltiptext">My facebook</span
+              ><img
+                id="facebook"
+                src="src/img/facebook.png"
+                class="image"
+                width="50"
+                alt="facebook"
+            /></span> </a
+          ><a
+            href="https://www.youtube.com/channel/UCP91LPgRFY03YoIGrmuMH9A"
+            target="_blank"
+            ><span
+              class="tooltip"
+              onmouseover="hoverImage('youtube')"
+              onmouseleave="unhoverImage('youtube')"
+            >
+              <span class="tooltiptext"
+                >My youtube (haven't uploaded in a long time)</span
+              ><img
+                id="youtube"
+                src="src/img/youtube.png"
+                class="image"
+                width="50"
+                alt="youtube"
+              />
+            </span>
+          </a> </span
+      ></span>
     </div>
 
     <div class="main footer">
-      <!-- <h1>About this website</h1>
-      <hr /> -->
-
       <p>
         This website was developed by me and hosted with
         <a href="https://github.com/tandy-c/website">github pages</a>.
       </p>
-      <!-- <a
-        href="https://github.com/tandy-c/website"
-        target="_blank"
-        class="link_img"
-        style="margin-right: 15px"
-        ><span
-          class="tooltip"
-          onmouseover="hoverImage('github-5')"
-          onmouseleave="unhoverImage('github-5')"
-        >
-          <span class="tooltiptext">View the repo!</span
-          ><img
-            id="github-5"
-            src="src/img/github.png"
-            class="image"
-            width="25"
-            title="View the repository here"
-            alt="github"
-        /></span>
-      </a> -->
-
-      <!-- It currently uses
-        the following javascript modules:
-      </p>
-      <ul>
-        <li>
-          <a href="https://www.typeitjs.com/" target="_blank">TypeIt</a> for the
-          animated typing
-        </li>
-      </ul> -->
     </div>
   </body>
 </html>

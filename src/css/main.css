@@ -86,13 +86,13 @@ iframe {
   font-size: 14pt;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  margin: 0% 0%;
-  /* background: linear-gradient(
+  margin: 4% 0%;
+  background: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.8) 5% 95%,
     rgba(0, 0, 0, 0.7)
-  ); */
-  background: rgba(0, 0, 0, 0.8);
+  );
+  /* background: rgba(0, 0, 0, 0.8); */
 }
 .titlecard {
   display: flex;
@@ -125,14 +125,14 @@ iframe {
 }
 
 .footer {
-  /* margin-top: 10%; */
-  margin-bottom: 0%;
   font-size: 8pt;
   text-align: center;
   color: #888888;
+  margin-bottom: 0px;
 }
 
 .footer p {
+  /* margin-top: 30px; */
   font-size: 10pt;
 }
 
@@ -140,3 +140,10 @@ iframe {
   border-radius: 12px;
   margin-bottom: -20px;
 }
+
+/* #about,
+#schoolProjects,
+#projects,
+#contact {
+  padding-bottom: 1000px;
+} */

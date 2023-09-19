@@ -2,6 +2,7 @@
   position: relative;
   display: inline-block;
   max-height: 100%;
+  font-size: 10.5;
   /* border-bottom: 1px dotted black; */
 }
 
@@ -23,6 +24,7 @@
   white-space: nowrap;
   pointer-events: none;
   border: none;
+  font-size: 10.5;
 }
 
 .tooltip .tooltiptext::after {

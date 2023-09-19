@@ -100,13 +100,15 @@ function unhoverImage(image_id, interval = 250) {
 function typeWriter() {
   const stringArray = [
     "'m a runner.",
-    " ride trains.",
+    // " ride trains.",
+    " love walking around Boston.",
+
     "'m a biker.",
     // " listen to lots of music.",
     "'m a sailor.",
     " like SQL.",
     "'m a gamer.",
-    " love walking around Boston.",
+    "...",
     `'m a "dunkie junkie."`,
     "'m a dog person.",
   ];

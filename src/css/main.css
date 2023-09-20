@@ -21,7 +21,7 @@ h3 {
   color: #f2f2f2;
 }
 h4 {
-  color: #d1d1d1;
+  color: #bebebe;
   margin-top: -25px;
 }
 p {
@@ -72,15 +72,16 @@ iframe {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
+  /* z-index: 100;
+  position: relative; */
 }
 
 .main {
-  padding: 0px;
   background: none;
-  z-index: 100000000;
+  /* z-index: 100000000; */
 
   overflow: hidden;
-  padding: 14px 15%;
+  padding: 14px 14px;
   /* border: 3px solid black; */
   justify-content: center;
   font-size: 14pt;
@@ -116,7 +117,7 @@ iframe {
 
 #title {
   margin: 12% 0% 20%;
-  /* margin: 250px 0px; */
+  /* margin: 200px 0px; */
 }
 
 .teams_sc {
@@ -147,3 +148,32 @@ iframe {
 #contact {
   padding-bottom: 1000px;
 } */
+.caption {
+  width: 90%;
+  align-self: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 10pt;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  /* margin: 10px 0px 10px 0px; */
+  /* margin-bottom: -100px; */
+  /* aspect-ratio: 16/9; */
+  /* margin-left: 40px; */
+  /* margin-right: 40000px; */
+}
+
+.centered_img {
+  width: 90%;
+  max-width: 600px;
+  align-self: center;
+  border: none;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.tf2_website {
+  aspect-ratio: 16/9;
+}

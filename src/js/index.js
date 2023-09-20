@@ -2,12 +2,11 @@ window.addEventListener("load", function () {
   typeWriter();
 });
 
-function openDrawer(drawer_id, interval = 250, iframeSources = "") {
+function openDrawer(drawerId, interval = 200) {
   "Opens Drawer and edits carrot by Id";
-  var drawer = document.getElementById("drawer-" + drawer_id);
-  var carrot = document.getElementById("carrot-" + drawer_id);
+  var drawer = document.getElementById("drawer-" + drawerId);
+  var carrot = document.getElementById("carrot-" + drawerId);
   var iFrames = drawer.getElementsByTagName("iframe");
-  var iframeSources = iframeSources.split(",");
 
   if (drawer.style.display == "") {
     drawer.animate({ opacity: [1, 0] }, interval).onfinish = function () {
@@ -20,7 +19,9 @@ function openDrawer(drawer_id, interval = 250, iframeSources = "") {
 
     for (ifr of iFrames) {
       ifr.animate({ opacity: [1, 0] }, interval).onfinish = function () {
-        ifr.src = "";
+        if (ifr.getAttribute("data-src")) {
+          ifr.src = "";
+        }
       };
     }
     return;
@@ -32,56 +33,58 @@ function openDrawer(drawer_id, interval = 250, iframeSources = "") {
   drawer.animate({ opacity: [0, 1] }, interval);
   drawer.style.display = "";
 
-  for (i = 0; i < iFrames.length; i++) {
-    iFrames[i].src = iframeSources[i];
+  for (ifr of iFrames) {
+    if (ifr.getAttribute("data-src")) {
+      ifr.src = ifr.getAttribute("data-src");
+    }
   }
 }
 
 function hoverDrawer(
-  rowId,
+  drawerId,
   colArray = ["col-1-", "col-2-", "col-3-"],
-  interval = 250
+  interval = 200
 ) {
   for (colId of colArray) {
-    var column = document.getElementById(colId + rowId);
+    var column = document.getElementById(colId + drawerId);
 
-    // if (rowId != "1") {
+    // if (drawerId != "1") {
     //   // column.style.borderTop = "1px solid rgba(242, 242, 242, 0.45)";
     //   // column.style.marginTop = "-1px";
     // }
     column.animate(
-      { background: "rgba(255, 255, 255, 0.25)" },
+      { background: "rgba(255, 255, 255, 0.30)" },
       interval
     ).onfinish = function () {
       for (colId of colArray) {
-        var columnTest = document.getElementById(colId + rowId);
-        columnTest.style.background = "rgba(255, 255, 255, 0.25)";
+        var columnTest = document.getElementById(colId + drawerId);
+        columnTest.style.background = "rgba(255, 255, 255, 0.30)";
       }
     };
   }
 }
 
 function unhoverDrawer(
-  rowId,
+  drawerId,
   colArray = ["col-1-", "col-2-", "col-3-"],
-  interval = 250
+  interval = 200
 ) {
   for (colId of colArray) {
-    var column = document.getElementById(colId + rowId);
-    // if (rowId != "1") {
+    var column = document.getElementById(colId + drawerId);
+    // if (drawerId != "1") {
     //   // column.style.borderTop = "none";
     //   column.style.marginTop = "0px";
     // }
     column.animate({ background: "none" }, interval).onfinish = function () {
       for (colId of colArray) {
-        var columnTest = document.getElementById(colId + rowId);
+        var columnTest = document.getElementById(colId + drawerId);
         columnTest.style.background = "none";
       }
     };
   }
 }
 
-function hoverImage(image_id, interval = 250) {
+function hoverImage(image_id, interval = 200) {
   var image = document.getElementById(image_id);
   // image.style.visibility = "hidden";
   image.animate({ transform: "scale(1.1)" }, interval).onfinish = function () {
@@ -89,7 +92,7 @@ function hoverImage(image_id, interval = 250) {
   };
 }
 
-function unhoverImage(image_id, interval = 250) {
+function unhoverImage(image_id, interval = 200) {
   var image = document.getElementById(image_id);
   // image.style.visibility = "hidden";
   image.animate({ transform: "scale(1)" }, interval).onfinish = function () {
@@ -100,15 +103,13 @@ function unhoverImage(image_id, interval = 250) {
 function typeWriter() {
   const stringArray = [
     "'m a runner.",
-    // " ride trains.",
     " love walking around Boston.",
-
     "'m a biker.",
     // " listen to lots of music.",
     "'m a sailor.",
-    " like SQL.",
+    " ride trains.",
+    // " like SQL.",
     "'m a gamer.",
-    "...",
     `'m a "dunkie junkie."`,
     "'m a dog person.",
   ];
@@ -121,6 +122,6 @@ function typeWriter() {
     loop: true,
     waitUntilVisible: true,
     breakLines: false,
-    nextStringDelay: [2500, 500],
+    nextStringDelay: [2000, 500],
   }).go();
 }

@@ -32,8 +32,8 @@
 
   color: black;
   z-index: 100;
-  animation: fadeIn 250ms;
-  -webkit-animation: fadeIn 250ms;
+  animation: fadeIn 200ms;
+  -webkit-animation: fadeIn 200ms;
 }
 /* .navbar:hover{
   border-bottom: ;

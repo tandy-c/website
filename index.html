@@ -62,14 +62,14 @@
       </p> -->
       <p>
         I grew up in Stoughton but I then moved to Sharon, Massachusetts. I was
-        surrounded with the outdoors in Sharon, and I enjoyed exploring the
-        woods with my dog and sailing in the lake, but I never minded a day
-        inside, gaming. Meanwhile, I developed academic interests in economics,
+        surrounded with the outdoors in Sharon; I enjoyed exploring the woods
+        with my dog and sailing in the lake, but I never minded a day inside,
+        gaming. Meanwhile, I developed academic interests in economics,
         geography, STEM and history.
       </p>
       <p>
-        My music taste is all over the place, but I think that this song is
-        severely underrated.
+        I used to play the drums, but my music taste is all over the place. I
+        like to think that this song is severely underrated.
       </p>
       <iframe
         class="spotifyiFrame"
@@ -195,7 +195,8 @@
               <li>
                 I wanted to make something that I, along with others, could use
                 on a daily basis, especially since there weren't any
-                <i>good</i> looking MBTA realtime maps.<a
+                <i>good</i> looking MBTA realtime maps.
+                <a
                   target="_blank"
                   href="https://mbta.sites.fas.harvard.edu/T/commuter-rail-map.html"
                   >This website</a
@@ -208,9 +209,13 @@
                 database.
               </li>
               <li>
-                The data is sent using Flask (Python), and rendered with
-                leaflet, a JavaScript library for interactive maps and has some
-                html and css to style it.
+                The data is sent using Flask (Python) and rendered with
+                leaflet(JavaScript). Additional syling is done with HTML and
+                CSS.
+              </li>
+              <li>
+                This website constantly evolves; I try to update it whenever I
+                have time and ideas for new features or fixes.
               </li>
             </ul>
 
@@ -228,7 +233,110 @@
             </p>
           </span>
         </span>
-
+        <span
+          class="span_img"
+          onclick="openDrawer('7')"
+          onmouseover="hoverDrawer('7')"
+          onmouseleave="unhoverDrawer('7')"
+          id="col-1-7"
+        >
+          <img
+            src="src/img/LP.png"
+            height="50"
+            width="50"
+            class="image"
+            alt="T"
+          />
+        </span>
+        <span
+          onclick="openDrawer('7')"
+          onmouseover="hoverDrawer('7')"
+          onmouseleave="unhoverDrawer('7')"
+          id="col-2-7"
+        >
+          <h2>Linear Programming Site</h2>
+          <h4 class="inProgress">In progress</h4>
+        </span>
+        <span
+          class="span_img"
+          onclick="openDrawer('7')"
+          onmouseover="hoverDrawer('7')"
+          onmouseleave="unhoverDrawer('7')"
+          id="col-3-7"
+        >
+          <img
+            src="src/img/carrot.png"
+            height="25"
+            width="25"
+            class="image"
+            alt="carrot"
+            id="carrot-7"
+          />
+        </span>
+        <span id="drawer-7" class="drawer" style="display: none">
+          <h3>A website to solve linear optimization problems</h3>
+          <span>
+            <span class="contact-grid">
+              <a
+                href="https://github.com/tandy-c/linear_programmer"
+                target="_blank"
+                class="link_img"
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('github-5')"
+                  onmouseleave="unhoverImage('github-5')"
+                >
+                  <span class="tooltiptext">View the repo!</span
+                  ><img
+                    id="github-5"
+                    src="src/img/github.png"
+                    class="image"
+                    width="50"
+                    alt="github"
+                /></span>
+              </a>
+              <!-- <a href="https://mbtamapper.com/" target="_blank" class="link_img"
+                ><span
+                  class="tooltip"
+                  onmouseover="hoverImage('globe-1')"
+                  onmouseleave="unhoverImage('globe-1')"
+                >
+                  <span class="tooltiptext">View the site!</span
+                  ><img
+                    id="globe-1"
+                    src="src/img/globe.png"
+                    class="image"
+                    alt="globe"
+                    width="50"
+                /></span> </a> -->
+            </span>
+            <ul>
+              <li>
+                One day I was bored in operations research and didn't want to
+                use the ancient software that we were about to install.
+              </li>
+              <li>
+                I was overcomplicating things again, but that's okay because I
+                learned a lot about regular expressions.
+              </li>
+              <li>
+                It uses flask and google OR tools (Python) to run a webpage that
+                could solve linear programming problems, with some additional
+                string parsing to implement "<", ">" and "!=."
+              </li>
+              <li>
+                I still have to flesh out the website and maybe some
+                improvements to the algorithm.
+              </li>
+            </ul>
+            <img
+              src="src/img/or_webpage.png"
+              class="centered_img"
+              alt="operations webpage"
+            />
+            <p class="caption">I still have a ton of work to do.</p>
+          </span>
+        </span>
         <span
           class="span_img"
           onclick="openDrawer('2')"
@@ -298,12 +406,12 @@
                 easy to update and regenerate.
               </li>
               <li>
-                Uses SQLAlchemy and pandas (python) to generate the database
-                normally hand-created by students by reading an excel file
+                The project uses SQLAlchemy and pandas (python) to generate the
+                database normally hand-created by students.
               </li>
               <li>
                 I might use this repository for further tutoring and might add
-                more scripts related to the class
+                more scripts related to the class.
               </li>
             </ul>
           </span>
@@ -396,102 +504,13 @@
             </p>
           </span>
         </span>
-
-        <span
-          class="span_img"
-          onclick="openDrawer('7')"
-          onmouseover="hoverDrawer('7')"
-          onmouseleave="unhoverDrawer('7')"
-          id="col-1-7"
-        >
-          <img
-            src="src/img/LP.png"
-            height="50"
-            width="50"
-            class="image"
-            alt="T"
-          />
-        </span>
-        <span
-          onclick="openDrawer('7')"
-          onmouseover="hoverDrawer('7')"
-          onmouseleave="unhoverDrawer('7')"
-          id="col-2-7"
-        >
-          <h2>Linear Programming Site</h2>
-          <h4>In progress</h4>
-        </span>
-        <span
-          class="span_img"
-          onclick="openDrawer('7')"
-          onmouseover="hoverDrawer('7')"
-          onmouseleave="unhoverDrawer('7')"
-          id="col-3-7"
-        >
-          <img
-            src="src/img/carrot.png"
-            height="25"
-            width="25"
-            class="image"
-            alt="carrot"
-            id="carrot-7"
-          />
-        </span>
-        <span id="drawer-7" class="drawer" style="display: none">
-          <h3>A website to solve linear optimization problems</h3>
-          <span>
-            <span class="contact-grid">
-              <a
-                href="https://github.com/tandy-c/linear_programmer"
-                target="_blank"
-                class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('github-5')"
-                  onmouseleave="unhoverImage('github-5')"
-                >
-                  <span class="tooltiptext">View the repo!</span
-                  ><img
-                    id="github-5"
-                    src="src/img/github.png"
-                    class="image"
-                    width="50"
-                    alt="github"
-                /></span>
-              </a>
-              <!-- <a href="https://mbtamapper.com/" target="_blank" class="link_img"
-                ><span
-                  class="tooltip"
-                  onmouseover="hoverImage('globe-1')"
-                  onmouseleave="unhoverImage('globe-1')"
-                >
-                  <span class="tooltiptext">View the site!</span
-                  ><img
-                    id="globe-1"
-                    src="src/img/globe.png"
-                    class="image"
-                    alt="globe"
-                    width="50"
-                /></span> </a> -->
-            </span>
-            <ul>
-              <li>
-                One day I was bored in operations research and didn't want to
-                use the ancient software that we were about to install.
-              </li>
-              <li>
-                I was overcomplicating things again, but that's okay because I
-                learned a lot about regular expressions
-              </li>
-            </ul>
-          </span>
-        </span>
       </span>
     </div>
 
     <div class="main">
-      <h1>School Projects</h1>
+      <h1>Class Projects</h1>
       <hr />
+      <br />
       <span class="container">
         <span
           class="span_img"
@@ -515,7 +534,7 @@
           id="col-2-4"
         >
           <h2>TF2 Website</h2>
-          <h4>IE3425 Final Project</h4>
+          <h4>IE3425</h4>
         </span>
         <span
           class="span_img"
@@ -558,19 +577,18 @@
             </span>
             <ul>
               <li>
-                This project was supposed to combine a front, middle and backend
-                to create a workable website of our own violation. In my case,
-                the user of the website would've queried the database for
-                information on compeitive team fortress 2 players.
+                The goal of this project was to combine a front, middle and
+                backend to create a website. In my case, a user would've queried
+                the website and database for information on competitive tf2
+                players.
               </li>
               <li>
                 We ran out of time towards the end of the semester, so there was
                 no interconnectivity between the front and backend.
               </li>
               <li>
-                I just put it here to show how far I've come since this taking
-                this course. I would never create create something this messy
-                now.
+                I put this project here to demonstrate progress; I wouldn't
+                create something like this in the way I did again.
               </li>
             </ul>
             <iframe
@@ -578,7 +596,14 @@
               title="commuter rail map"
               class="tf2_website"
             ></iframe>
-            <p class="caption"></p>
+            <p class="caption">
+              A preview of the site, which lacks functionality. The full site's
+              <a
+                target="_blank"
+                href="https://www1.coe.neu.edu/~johancho/project/project1_home.html"
+                >here</a
+              >.
+            </p>
           </span>
         </span>
 
@@ -603,8 +628,8 @@
           onmouseleave="unhoverDrawer('5')"
           id="col-2-5"
         >
-          <h2>Starbucks Layout Improvement</h2>
-          <h4>IE2310 Final Project</h4>
+          <h2>Starbucks Optimization</h2>
+          <h4>IE2310</h4>
         </span>
         <span
           class="span_img"
@@ -623,7 +648,7 @@
           />
         </span>
         <span id="drawer-5" class="drawer" style="display: none">
-          <h3>Optimizated NEU starbucks layout.</h3>
+          <h3>An optimizated starbucks @NEU layout.</h3>
           <span>
             <span class="contact-grid">
               <a
@@ -672,14 +697,14 @@
                 report and the powerpoint.
               </li>
               <li>
-                I learned both about layout improvement techniques, autocad, and
+                I learned both about layout improvement techniques, autocad and
                 leadership, particually under a time crunch scenario.
               </li>
             </ul>
             <img
               src="src/img/startrucks_flow.png "
               class="centered_img"
-              alt="teams screenshot"
+              alt="startrucks flowchart"
             />
             <p class="caption">
               Flowchart I made to illustrate business operations.
@@ -687,7 +712,7 @@
             <img
               src="src/img/startrucks_layout.png"
               class="centered_img"
-              alt="teams screenshot"
+              alt="startrucks layout"
             />
             <p class="caption">
               Proposed layout. See the report for its quantitive justification.
@@ -707,7 +732,7 @@
             height="50"
             width="50"
             class="image"
-            alt="teams"
+            alt="coe"
           />
         </span>
         <span
@@ -717,7 +742,7 @@
           id="col-2-6"
         >
           <h2>Crazy Baskets</h2>
-          <h4>GE1502 Final Project</h4>
+          <h4>GE1502</h4>
         </span>
         <span
           class="span_img"
@@ -798,7 +823,7 @@
               allowfullscreen
             ></iframe>
             <p class="caption">
-              Video of the highest scoring game played at the expo.
+              Video of the highest scoring player at the expo.
             </p>
           </span>
         </span>

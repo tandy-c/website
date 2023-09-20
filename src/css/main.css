@@ -112,7 +112,7 @@ iframe {
 
 .title_h2 {
   text-align: center;
-  color: #888888;
+  color: #bebebe;
 }
 
 #title {
@@ -176,4 +176,8 @@ iframe {
 
 .tf2_website {
   aspect-ratio: 16/9;
+}
+
+.inProgress {
+  color: rgb(78, 78, 78);
 }

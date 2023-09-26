@@ -81,11 +81,10 @@ iframe {
 }
 
 .main {
-  background: none;
   /* z-index: 100000000; */
 
   overflow: hidden;
-  padding: 0px 40px 14px;
+  padding: 0px 5% 14px;
   /* border: 3px solid black; */
   justify-content: center;
   font-size: 14pt;
@@ -93,9 +92,9 @@ iframe {
   backdrop-filter: blur(10px);
   margin: 4% 0%;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.8) 5% 95%,
-    rgba(0, 0, 0, 0.7)
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.85) 5% 95%,
+    rgba(0, 0, 0, 0.75)
   );
   /* background: rgba(0, 0, 0, 0.8); */
 }

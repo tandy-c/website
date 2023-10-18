@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "montserrat", sans-serif;
+  font-family: "itc-stone-sans-reg", "montserrat", sans-serif;
   height: auto;
   background-image: url("../img/sunset.jpeg");
   background-repeat: no-repeat;
@@ -144,7 +144,8 @@ iframe {
 
 .spotifyiFrame {
   border-radius: 12px;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
+  height: 80px;
 }
 
 /* #about,

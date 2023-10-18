@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "itc-stone-sans-reg", "montserrat", sans-serif;
+  font-family: "montserrat", sans-serif;
   height: auto;
   background-image: url("../img/sunset.jpeg");
   background-repeat: no-repeat;
@@ -92,9 +92,9 @@ iframe {
   backdrop-filter: blur(10px);
   margin: 4% 0%;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.85) 5% 95%,
-    rgba(0, 0, 0, 0.75)
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.94) 5% 95%,
+    rgba(0, 0, 0, 0.85)
   );
   /* background: rgba(0, 0, 0, 0.8); */
 }
@@ -185,4 +185,8 @@ iframe {
 
 .inProgress {
   color: rgb(78, 78, 78);
+}
+
+.ie_subheader {
+  margin-bottom: 15px;
 }

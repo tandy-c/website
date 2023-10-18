@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="src/css/drawer.css" />
     <link rel="stylesheet" href="src/css/tooltip.css" />
     <link rel="stylesheet" href="src/css/animations.css" />
+    <link rel="stylesheet" href="src/css/dropdown.css" />
     <script src="src/js/index.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   </head>
@@ -31,11 +32,48 @@
   <body>
     <div class="navbar">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <div
+        class="dropdown"
+        onmouseover="openDropDown('projectDropDown', 0)"
+        onmouseleave="closeDropDown('projectDropDown', 0)"
+      >
+        <a href="#projects">Projects</a>
+        <div
+          id="projectDropDown"
+          class="dropdown-content"
+          style="display: none"
+        >
+          <!-- dasdasdsa -->
+          <a href="#mbtamapper">MBTA Mapper</a>
+          <a href="#lp">Linear Programming</a>
+          <a href="#dbgen">Database Gen</a>
+          <a href="#msftbot">Teams Bot</a>
+        </div>
+      </div>
+      <div
+        class="dropdown"
+        onmouseover="openDropDown('contactDropDown', 0)"
+        onmouseleave="closeDropDown('contactDropDown', 0)"
+      >
+        <a href="#contact">Contact</a>
+        <div
+          id="contactDropDown"
+          class="dropdown-content"
+          style="display: none"
+        >
+          <!-- dasdasdsa -->
+          <a href="mailto:cho.joh@northeastern.edu" target="_blank">Email</a>
+          <a href="https://www.linkedin.com/in/johan-cho-38892b1b1/"
+            >Linkedin</a
+          >
+          <a href="#contact">Other</a>
+        </div>
+      </div>
+
       <!-- <a href="#experience">Experience</a> -->
       <a href="#" class="right">Johan Cho</a>
     </div>
+
     <!-- <div onload="titleOnLoad()"></div> -->
     <div class="main" id="title">
       <img
@@ -52,7 +90,7 @@
 
     <div class="main">
       <h1 id="about">About Me</h1>
-      <h4 style="margin-bottom: 15px">
+      <h4 class="ie_subheader">
         A 3rd year "Industrial Engineer" at Northeastern University.
       </h4>
       <hr />
@@ -61,15 +99,15 @@
         the backend.
       </p> -->
       <p>
-        I grew up in Stoughton but I then moved to Sharon, Massachusetts. I was
-        surrounded with the outdoors in Sharon; I enjoyed exploring the woods
-        with my dog and sailing in the lake, but I never minded a day inside,
-        gaming. Meanwhile, I developed academic interests in economics,
-        geography, STEM and history.
+        I was surrounded with the outdoors in my hometown of Sharon,
+        Massachusetts; I enjoyed exploring the woods with my dog and sailing in
+        lake Massapoag, but I never minded a day inside, gaming. Meanwhile, I
+        developed academic interests in economics, geography, STEM and history.
       </p>
       <p>
-        I used to play the drums, but my music taste is all over the place. I
-        like to think that this song is severely underrated.
+        I still enjoy sailing, and now I spend much of my freetime (away from my
+        computer) either biking, running or exploring Boston with constant
+        music, like this song:
       </p>
       <iframe
         class="spotifyiFrame"
@@ -83,10 +121,14 @@
         loading="lazy"
       ></iframe>
       <p>
-        I became an industrial engineer becuase it was a compromise between my
-        interests, and I didn't want to code. Then, I took database systems; it
-        turned out I really liked SQL and Python. I still lack the fundementals
-        of computer science, but if I get the opportunity to learn them, I'll
+        In college, I became an industrial engineer becuase it was the best
+        compromise between my interests, and I didn't want to program, despite
+        pressure from my parents. I believed that I could get out of it.
+      </p>
+      <p>
+        However, it turned out I really liked SQL and Python. Since I never took
+        a formal computer science course, I lack the fundementals of how my code
+        works, but if I get the opportunity to learn them through co-op, I'll
         get a lot better at programming.
       </p>
       <p>
@@ -118,6 +160,7 @@
             width="50"
             class="image"
             alt="T"
+            id="mbtamapper"
           />
         </span>
         <span
@@ -148,7 +191,11 @@
         <span id="drawer-1" class="drawer" style="display: none">
           <h3>
             Realtime MBTA mapping
-            <a href="https://mbtamapper.com" target="_blank" class="link_img"
+            <a
+              href="https://mbtamapper.com"
+              target="_blank"
+              class="link_img"
+              rel="noopener"
               >@mbtamapper.com</a
             >.
           </h3>
@@ -158,6 +205,7 @@
                 href="https://github.com/tandy-c/mbta_mapper"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('github-1')"
@@ -172,7 +220,11 @@
                     alt="github"
                 /></span>
               </a>
-              <a href="https://mbtamapper.com/" target="_blank" class="link_img"
+              <a
+                href="https://mbtamapper.com/"
+                target="_blank"
+                class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('globe-1')"
@@ -187,20 +239,22 @@
                     width="50"
                 /></span> </a
             ></span>
+            <p>
+              I wanted to make something that both me and my friends could use
+              on a daily basis after I lost access to Keolis's internal map app,
+              especially since there weren't any
+              <i>good</i> looking/usable MBTA realtime maps.
+              <a
+                target="_blank"
+                href="https://mbta.sites.fas.harvard.edu/T/commuter-rail-map.html"
+                rel="noopener"
+                >This website</a
+              >
+              is the only one I know of and it looks and feels like something
+              from 1998.
+            </p>
+            <h3>Implementation:</h3>
             <ul>
-              <li>
-                I wanted to make something that both me and my friends could use
-                on a daily basis after I lost access to Keolis's internal map
-                app, especially since there weren't any
-                <i>good</i> looking/usable MBTA realtime maps.
-                <a
-                  target="_blank"
-                  href="https://mbta.sites.fas.harvard.edu/T/commuter-rail-map.html"
-                  >This website</a
-                >
-                is the only one I know of and it looks and feels like something
-                from 1998.
-              </li>
               <li>
                 This project uses requests, pandas and SQLAlchemy (Python) to
                 pull and dump static and realtime data into a SQLite database.
@@ -227,8 +281,9 @@
             <p class="caption">
               A preview of the web app for the commuter rail, but there are
               other routes available
-              <a target="_blank" href="https://mbtamapper.com/">here</a>. Note
-              that other route types might take longer to load.
+              <a target="_blank" href="https://mbtamapper.com/" rel="noopener"
+                >here</a
+              >. Note that other route types might take longer to load.
             </p>
           </span>
         </span>
@@ -245,6 +300,7 @@
             width="50"
             class="image"
             alt="T"
+            id="lp"
           />
         </span>
         <span
@@ -280,6 +336,7 @@
                 href="https://github.com/tandy-c/linear_programmer"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('github-5')"
@@ -298,6 +355,7 @@
                 href="https://tandyc.pythonanywhere.com"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('globe-3')"
@@ -315,18 +373,13 @@
             </span>
             <ul>
               <li>
-                One day I was bored in operations research and I didn't want to
-                use the ancient software that we were about to install.
+                I built a little website that uses flask and google OR tools
+                (Python) to run a webpage on pythonanywhere that could solve
+                linear programming problems.
               </li>
               <li>
-                I overcomplicated things again, but that's okay because I
-                learned a lot about regular expressions.
-              </li>
-              <li>
-                It uses flask and google OR tools (Python) to run a webpage on
-                pythonanywhere that could solve linear programming problems,
-                with some string parsing to make it more dynamic and a few
-                workarounds to implement "<", ">" and "!=."
+                I used some regex and string parsing to make it more dynamic and
+                a few workarounds to implement "<", ">" and "!=."
               </li>
             </ul>
             <iframe
@@ -335,9 +388,7 @@
               loading="lazy"
               class="tf2_website"
             ></iframe>
-            <p class="caption">
-              It's a little scuffed, and pointless, but it works!
-            </p>
+            <p class="caption">Preview of the website.</p>
           </span>
         </span>
         <span
@@ -353,6 +404,7 @@
             width="50"
             alt="sqlite"
             class="image"
+            id="dbgen"
           />
         </span>
         <span
@@ -381,13 +433,14 @@
           />
         </span>
         <span id="drawer-2" class="drawer" style="display: none">
-          <h3>Overcomplication at its finest.</h3>
+          <h3>Helper repo for IE3425.</h3>
           <span>
             <span class="contact-grid">
               <a
                 href="https://github.com/tandy-c/NEU-IE3425"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('github-2')"
@@ -405,12 +458,13 @@
             </span>
             <ul>
               <li>
-                I lost my database and overcomplicated its recreation, but it's
-                easy to update and regenerate.
+                I had lost my database from when I took the class, and I thought
+                this might make it easier for students to get started because
+                they normally hand-create it.
               </li>
               <li>
-                The project uses SQLAlchemy and pandas (python) to generate the
-                database normally hand-created by students.
+                This little project uses SQLAlchemy and pandas (python) to
+                generate the database from an excel file.
               </li>
               <li>
                 I might use this repository for further tutoring and might add
@@ -433,6 +487,7 @@
             width="50"
             class="image"
             alt="teams"
+            id="msftbot"
           />
         </span>
         <span
@@ -461,12 +516,13 @@
           />
         </span>
         <span id="drawer-3" class="drawer" style="display: none">
-          <h3>My laziness knows no bounds.</h3>
+          <h3>Automated, scheduled teams messages.</h3>
           <span>
             <span class="contact-grid">
               <a
                 href="https://github.com/tandy-c/msteamsbot"
                 target="_blank"
+                rel="noopener"
                 class="link_img"
                 ><span
                   class="tooltip"
@@ -486,15 +542,13 @@
             </span>
             <ul>
               <li>
-                I'm too lazy to write the tutoring message every day, so I spent
-                four hours writing and deploying this bot with Docker and Azure
-                to save me five minutes of time every day.
+                As a College of Engineering tutor, I start my office hours with
+                a teams message, so I wrote this bot to do it for me.
               </li>
               <li>
-                Uses a Microsoft Teams webhook and python to automate the
-                tutoring message sent to students.
+                Uses a Microsoft Teams webhook, python and docker to automate
+                the tutoring message sent to students.
               </li>
-              <li>Was it worth it? Of course it was!</li>
             </ul>
             <img
               src="src/img/teams_sc.png"
@@ -563,6 +617,7 @@
                 href="https://www1.coe.neu.edu/~johancho/project/"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('globe-2')"
@@ -586,12 +641,11 @@
                 players.
               </li>
               <li>
-                My professor ran out of time, so interconnectivity between the
-                front and backend wasn't implemented.
+                My professor couldn't teach Django before the deadline, so the
+                front and backend were disjoint.
               </li>
               <li>
-                It's fun to look back on this project; I wouldn't create
-                something like this in the way I did again.
+                Although it's incomplete, I taught myself a lot of html and css.
               </li>
             </ul>
             <iframe
@@ -600,9 +654,10 @@
               class="tf2_website"
             ></iframe>
             <p class="caption">
-              A preview of the site, which lacks functionality. The full site's
+              A preview of the site, lacking any functionality. The full site's
               <a
                 target="_blank"
+                rel="noopener"
                 href="https://www1.coe.neu.edu/~johancho/project/project1_home.html"
                 >here</a
               >.
@@ -631,7 +686,7 @@
           onmouseleave="unhoverDrawer('5')"
           id="col-2-5"
         >
-          <h2>Starbucks Optimization</h2>
+          <h2>Starbucks Layout</h2>
           <h4>IE2310</h4>
         </span>
         <span
@@ -658,6 +713,7 @@
                 href="https://docs.google.com/document/d/1S8s8DrhG35P3l1uizph_Plc6JiZnZSe4/edit?usp=sharing&ouid=111815965865952679739&rtpof=true&sd=true"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('word-1')"
@@ -676,6 +732,7 @@
                 href="https://docs.google.com/presentation/d/1nYvDKau7ufT_9a2q-3SS-Y8E5EvX0jLrVO2do6xl7wU/edit#slide=id.p"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('powerpoint-1')"
@@ -701,7 +758,7 @@
               </li>
               <li>
                 I learned about layout improvement techniques, autocad and
-                leadership, particually under a time crunch scenario.
+                leadership, particually under a time crunch.
               </li>
             </ul>
             <img
@@ -771,6 +828,7 @@
                 href="https://www.youtube.com/watch?v=xmlxNxxAq7Y"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('youtube-1')"
@@ -789,6 +847,7 @@
                 href="https://docs.google.com/presentation/d/13xmoiRTx9bpMINXsT2KmtCNBbbKl1s6YmDjlVTPX8eo/edit?usp=sharing"
                 target="_blank"
                 class="link_img"
+                rel="noopener"
                 ><span
                   class="tooltip"
                   onmouseover="hoverImage('powerpoint-2')"
@@ -813,7 +872,6 @@
                 I worked on reports and MATLAB (for analytics) and helped to
                 assemble the game.
               </li>
-              <li>I had fun throughout the process and exposition.</li>
             </ul>
             <iframe
               width="560"
@@ -857,6 +915,7 @@
         <a
           href="https://www.linkedin.com/in/johan-cho-38892b1b1/"
           target="_blank"
+          rel="noopener"
           ><span
             class="tooltip"
             onmouseover="hoverImage('linkedin')"
@@ -871,7 +930,7 @@
               alt="linkedin"
           /></span>
         </a>
-        <a href="https://github.com/tandy-c" target="_blank"
+        <a href="https://github.com/tandy-c" target="_blank" rel="noopener"
           ><span
             class="tooltip"
             onmouseover="hoverImage('github')"
@@ -885,7 +944,10 @@
               width="50"
               alt="github"
           /></span> </a
-        ><a href="https://www.facebook.com/johan.cho.927" target="_blank"
+        ><a
+          href="https://www.facebook.com/johan.cho.927"
+          target="_blank"
+          rel="noopener"
           ><span
             class="tooltip"
             onmouseover="hoverImage('facebook')"
@@ -902,6 +964,7 @@
         ><a
           href="https://www.youtube.com/channel/UCP91LPgRFY03YoIGrmuMH9A"
           target="_blank"
+          rel="noopener"
           ><span
             class="tooltip"
             onmouseover="hoverImage('youtube')"

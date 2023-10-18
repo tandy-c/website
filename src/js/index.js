@@ -2,6 +2,22 @@ window.addEventListener("load", function () {
   typeWriter();
 });
 
+function openDropDown(dropDownId, interval = 200) {
+  var dropDown = document.getElementById(dropDownId);
+
+  dropDown.animate({ opacity: [0, 0.95] }, interval).onfinish = function () {
+    dropDown.style.display = "block";
+  };
+}
+
+function closeDropDown(dropDownId, interval = 200) {
+  var dropDown = document.getElementById(dropDownId);
+
+  dropDown.animate({ opacity: [0.95, 0] }, interval).onfinish = function () {
+    dropDown.style.display = "none";
+  };
+}
+
 function openDrawer(drawerId, interval = 200) {
   "Opens Drawer and edits carrot by Id";
   var drawer = document.getElementById("drawer-" + drawerId);

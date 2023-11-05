@@ -100,7 +100,7 @@ function unhoverDrawer(
   }
 }
 
-function hoverImage(image_id, interval = 250) {
+function hoverImage(image_id, interval = 400) {
   var image = document.getElementById(image_id);
   // image.style.visibility = "hidden";
   image.animate({ transform: "scale(1.1)" }, interval).onfinish = function () {
@@ -108,7 +108,7 @@ function hoverImage(image_id, interval = 250) {
   };
 }
 
-function unhoverImage(image_id, interval = 250) {
+function unhoverImage(image_id, interval = 400) {
   var image = document.getElementById(image_id);
   // image.style.visibility = "hidden";
   image.animate({ transform: "scale(1)" }, interval).onfinish = function () {
